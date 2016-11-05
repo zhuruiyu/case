@@ -27,37 +27,37 @@
 //        oDrag.style.width = 400 +'px';
 //        oDrag.style.height = 400 +'px';
 //    }
-//    oDrag.onmousedown = function(e){
-//        e = e||window.event;
-//        var left = e.clientX-oDrag.offsetLeft;
-//        var top = e.clientY-oDrag.offsetTop;
-//
-//        document.onmousemove =  function(event){
-//            event = event||window.event;
-//            var ileft = event.clientX-left;
-//            var itop = event.clientY-top;
-//
-//            if(ileft<0){
-//                ileft = 0;
-//            }else if(ileft > document.documentElement.clientWidth - oDrag.offsetWidth){
-//                ileft = document.documentElement.clientWidth - oDrag.offsetWidth;
-//            }
-//
-//            if(itop<0){
-//                itop = 0;
-//            }else if(ileft > document.documentElement.clientWidth - oDrag.offsetWidth){
-//                ileft = document.documentElement.clientWidth - oDrag.offsetWidth;
-//            }
-//
-//            oDrag.style.left = ileft + 'px';
-//            oDrag.style.top = itop + 'px';
-//        }
-//
-//        document.onmouseup = function(){
-//            document.onmousemove = null;
-//        }
-//
-//    }
+    oDrag.onmousedown = function(e){
+        e = e||window.event;
+        var left = e.clientX-oDrag.offsetLeft;
+        var top = e.clientY-oDrag.offsetTop;
+
+        document.onmousemove =  function(event){
+            event = event||window.event;
+            var ileft = event.clientX-left;
+            var itop = event.clientY-top;
+
+            if(ileft<0){
+                ileft = 0;
+            }else if(ileft > document.documentElement.clientWidth - oDrag.offsetWidth){
+                ileft = document.documentElement.clientWidth - oDrag.offsetWidth;
+            }
+
+            if(itop<0){
+                itop = 0;
+            }else if(ileft > document.documentElement.clientWidth - oDrag.offsetWidth){
+                ileft = document.documentElement.clientWidth - oDrag.offsetWidth;
+            }
+
+            oDrag.style.left = ileft + 'px';
+            oDrag.style.top = itop + 'px';
+        }
+
+        document.onmouseup = function(){
+            document.onmousemove = null;
+        }
+
+    }
 
 //    oDrag.onmouseover = function(e){
 //        var left = e.clientX-oDrag.offsetLeft;
