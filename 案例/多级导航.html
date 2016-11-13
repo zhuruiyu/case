@@ -1,0 +1,100 @@
+<!--存在问题-->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        #menu .main-menu a{
+            color: red;
+        }
+      #menu .main-menu{
+          width: 120px;
+          height: 30px;
+          background: #ccc;
+          float: left;
+          margin-right: 5px;
+
+      }
+      #menu .main-menu a{
+          width: 120px;
+          height: 30px;
+          text-align: center;
+          line-height: 30px;
+          display: block;
+      }
+      .sub-menu{
+          display: none;
+      }
+        #menu .sub-menu li{
+            width: 120px;
+            height: 30px;
+            background:#ddd;
+            border-bottom: dashed 1px;
+
+        }
+        #menu .sub-menu a:hover{
+            background: #eee;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <ul id="menu">
+        <li class="main-menu">
+            <a href="">Link 1</a>
+            <ul class="sub-menu">
+                <li><a href="">submenu1</a></li>
+                <li><a href="">submenu2</a></li>
+                <li><a href="">submenu3</a></li>
+            </ul>
+        </li>
+        <li class="main-menu">
+            <a href="">Link 2</a>
+            <ul class="sub-menu">
+                <li><a href="">submenu1</a></li>
+                <li><a href="">submenu2</a></li>
+                <li><a href="">submenu3</a></li>
+            </ul>
+        </li>
+        <li class="main-menu">
+            <a href="">Link 3</a>
+            <ul class="sub-menu">
+                <li><a href="">submenu1</a></li>
+                <li><a href="">submenu2</a></li>
+                <li><a href="">submenu3</a></li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+         oMenu = document.getElementById("menu");
+         aLi = oMenu.getElementsByTagName("li");
+
+        for(var i=0;i<aLi.length;i++){
+            if(aLi[i].className="main-menu"){
+                aLi[i].onmouseover = function(){
+                    var oSubMenu = this.getElementsByTagName('ul')[0];     //为何用当前?????????
+                    oSubMenu.style.display = "block";
+                }
+                aLi[i].onmouseout = function(){
+                    var oSubMenu = this.getElementsByTagName('ul')[0];
+                    oSubMenu.style.display = "none";
+                }
+                }
+            }
+
+    </script>
+</div>
+</body>
+</html>

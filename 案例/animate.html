@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>animate</title>
+    <style>
+        #div1{
+            height: 100px;
+            width: 200px;
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+<button id="button">按钮</button>
+<div id="div1"></div>
+
+<script src="../jslib.js"></script>
+<script>
+    var oBtn=document.getElementById('button');
+    var oDiv1=document.getElementById('div1');
+
+
+    oBtn.onclick=function(){
+       animate(oDiv1,{
+
+           height:200,
+           width:400,
+           opacity:50
+       })
+   }
+
+</script>
+</body>
+</html>
