@@ -16,7 +16,7 @@
             height:344px;
             margin:100px auto;
             position: relative;
-            /*overflow: hidden;*/
+            overflow: hidden;
         }
         #content{
             width: 2720px;
@@ -92,15 +92,15 @@
     var aImg = oContainer.getElementsByTagName('img');
     var oNext = document.getElementById('next');
     var oPrev = document.getElementById('prev');
-    var iNow = this.index;
+    var iNow = 0;
 
 
 
-    oContent.style.width = (aImg.length+1)*aImg[0].offsetWidth + "px"
+    oContent.style.width = (aImg.length+1)*aImg[0].offsetWidth + "px";
     oContent.appendChild(aImg[0].cloneNode());
     for(var i=0;i<aLi.length;i++){
         aLi[i].index = i;
-        aLi.onmouseover = function(){
+        aLi[i].onmouseover = function(){
             changImg(this.index);
             iNow = this.index;
         }
