@@ -1,9 +1,8 @@
-<!--完成-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>111</title>
+    <title>轮播图</title>
     <style>
         *{
             margin:0;
@@ -13,21 +12,17 @@
             list-style: none;
         }
         #container{
-            width: 680px;
+            width:680px;
             height:344px;
             margin:100px auto;
             position: relative;
-            overflow: hidden;
-        }
-        #content{
-            width: 2720px;
-            position: absolute;
-            left:0;
         }
         #content img{
-            float: left;
+            display: none;
         }
-
+        #content img.selected{
+            display: block;
+        }
         #tab{
             position: absolute;
             right:10px;
@@ -67,10 +62,10 @@
 <body>
 <div id="container">
     <div id="content">
-        <img class="selected" src="img/5.jpg" alt="图片" title="pic"/>
-        <img src="img/6.jpg"/>
-        <img src="img/3.jpg"/>
-        <img src="img/4.jpg"/>
+        <img class="selected" src="1.jpg" alt="图片" title="pic"/>
+        <img src="2.jpg"/>
+        <img src="3.jpg"/>
+        <img src="4.jpg"/>
 
     </div>
     <ul id="tab">
@@ -84,52 +79,63 @@
         <span id="next">&gt;</span>
     </div>
 </div>
-<script src="jslib.js"></script>
 <script>
 
     var oContainer = document.getElementById('container');
-    var oContent = document.getElementById('content');
     var aLi = oContainer.getElementsByTagName('li');
     var aImg = oContainer.getElementsByTagName('img');
     var oNext = document.getElementById('next');
     var oPrev = document.getElementById('prev');
-    var iNow = 0;
+    var iNow = 0;//存储当前显示的索引
 
 
-
-    oContent.style.width = (aImg.length+1)*aImg[0].offsetWidth + "px";
-    oContent.appendChild(aImg[0].cloneNode());
-    for(var i=0;i<aLi.length;i++){
+    for(var i=0; i<aLi.length; i++){
         aLi[i].index = i;
         aLi[i].onmouseover = function(){
-            changImg(this.index);
+            changeImg(this.index);
             iNow = this.index;
         }
     }
 
-    function changImg(index){
-        for(var i=0;i<aLi.length;i++){
-            aLi[i].className = '';
-        }
-        aLi[index == aLi.length ? 0 :index].className = 'selected';
-        animate(oContent,{left:-aImg[0].offsetWidth*index});
-    }
-
     oNext.onclick = function(){
         iNow++;
-        if(iNow == aLi.length +1){
-            oContent.style.left = 0;
-            iNow = 1;
+        if(iNow == aLi.length){
+            iNow = 0;
         }
-    changImg(iNow);
+        changeImg(iNow);
+        // aLi[this.index]
+
     }
-  oPrev.onclick = function(){
-      iNow--;
-      if(iNow == -1){
-          oContent.style.left = -aLi.length*aImg[0].offsetWidth +'px';
-          inow = 3;
-      }
-  }
+    oPrev.onclick = function(){
+        iNow--;
+        if(iNow == -1){
+            iNow = aLi.length -1;
+        }
+        changeImg(iNow);
+    }
+
+    function changeImg(a){
+        for(var j=0; j<aLi.length; j++){
+            aLi[j].className = '';
+            aImg[j].className = '';
+        }
+        aLi[a].className = 'selected';
+        aImg[a].className = 'selected';
+    }
+    var timer;
+    timer = setInterval(function(){
+        oNext.onclick();
+    },1000);
+    oContainer.onmouseover = function(){
+        clearInterval(timer);
+    }
+    oContainer.onmouseout = function(){
+        timer = setInterval(function(){
+            oNext.onclick();
+        },1000);
+    }
+
+
 </script>
 
 </body>

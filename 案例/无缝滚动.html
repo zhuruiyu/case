@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>无缝滚动</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul{
+           list-style: none;
+        }
+        #container{
+            width:400px;
+            height: 200px;
+            border: 1px solid;
+            margin: 50px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        #content {
+            /*width: 500px;*/
+            /*height: 120px;*/
+            position: absolute;
+        }
+        #container li{
+            width: 120px;
+            height: 120px;
+            background: #000000;
+            color: #fff;
+            text-align: center;
+            line-height: 120px;
+            float: left;
+            margin-right: 10px;
+            font-size: 32px;
+
+        }
+
+
+        #arrow{
+            position: absolute;
+            bottom: 20px;
+            left: 110px;
+        }
+        #arrow span{
+            width: 100px;
+            height: 40px;
+            background: #CCCCCC;
+            float: left;
+            text-align: center;
+            line-height: 40px;
+            margin-right:5px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="container">
+    <ul id="content">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <!--<li>1</li>-->
+        <!--<li>2</li>-->
+        <!--<li>3</li>-->
+        <!--<li>4</li>-->
+    </ul>
+    <div id="arrow">
+        <span id="left">&lt;&lt向左</span>
+        <span id="right">&gt;&gt向右</span>
+    </div>
+</div>
+<script>
+    var oContent = document.getElementById("content");
+
+    oContent.innerHTML = oContent.innerHTML+oContent.innerHTML;
+    var aLi = oContent.getElementsByTagName("li");
+    var oRBtn =document.getElementById("right");
+    var oLBtn =document.getElementById("left");
+            oContent.style.width = aLi.length * (aLi[0].offsetWidth+10)+"px";
+     var speed = -2;
+
+    setInterval(function() {
+        if(oContent.offsetLeft<=-oContent.offsetWidth/2){
+            oContent.style.left = 0;
+        }
+
+        if(oContent.offsetLeft>0){
+            oContent.style.left = -oContent.offsetWidth/2+"px";
+        }
+        oContent.style.left = oContent.offsetLeft + speed + "px";
+    },10);
+
+ oRBtn.onmouseover = function(){
+     speed = 2;
+ }
+    oLBtn.onmouseover = function(){
+        speed = -2;
+    }
+
+
+</script>
+</body>
+</html>

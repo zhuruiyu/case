@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<head>
+
+    <title>李子翔的简历</title>
+    <!--<meta http-equiv="content-type" content="text/html; charset=utf-8"/>-->
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>-->
+    <!--<meta name="description" content="LZX,李子翔,web,前端工程师,个人简历,html5,css3"/>-->
+    <!--<link  rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />-->
+    <!--<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />-->
+    <!--<link rel="stylesheet" type="text/css" href="css/animate.min.css" />-->
+    <!--<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />-->
+    <!--&lt;!&ndash; CSS | Colors &ndash;&gt;-->
+    <!--<link rel="stylesheet" type="text/css" href="css/colors/DarkBlue.css" id="colors-style" />-->
+    <!--<link rel="stylesheet" type="text/css" href="css/switcher.css" />-->
+    <!--&lt;!&ndash; CSS | Style &ndash;&gt;-->
+    <!--<link rel="stylesheet" type="text/css" href="css/main.css" />-->
+    <!--&lt;!&ndash; CSS | prettyPhoto &ndash;&gt;-->
+    <!--<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css"/>-->
+    <!--<link rel="shortcut icon" type="image/x-icon" href="images/lzxicon/lzx.png">-->
+    <style>
+        @media only screen and (max-width : 991px){
+            .resp-vtabs .resp-tabs-container {
+                margin-left: 13px;
+            }
+        }
+
+        @media only screen and (min-width : 800px) and (max-width : 991px){
+            .resp-vtabs .resp-tabs-container {
+                margin-left: 13px;
+                width:89%;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+<!-- 加载页面 -->
+<div id="preloader"><div id="spinner"></div></div>
+
+<!-- 动态背景 -->
+<ul class="cb-slideshow" id="cb_slideshow" style="display:none">
+    <li><span>Image 01</span><div></div></li>
+    <li><span>Image 02</span><div></div></li>
+    <li><span>Image 03</span><div></div></li>
+    <li><span>Image 04</span><div></div></li>
+    <li><span>Image 05</span><div></div></li>
+    <li><span>Image 06</span><div></div></li>
+</ul>
+<!-- End 动态背景 -->
+
+<!-- 面板 -->
+<div class="wrapper">
+
+    <!--- 内容 -->
+    <section class="tab-content">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <div class="row">
+
+                        <div class="col-md-3 widget-profil">
+                            <div class="row">
+
+                                <!-- 个人头像  -->
+                                <div class="col-lg-12 col-md-12 col-sm-3 col-xs-12 ">
+
+                                    <!-- 单个头像 -->
+                                    <div class="circle-img" ></div>
+
+                                </div>
+                                <!-- End 个人头像 -->
+
+                                <!--头像下信息-->
+                                <div class="col-lg-12 col-md-12 col-sm-9 col-xs-12">
+
+                                    <!-- 个人信息 -->
+                                    <div id="profile_info">
+                                        <h1 id="name" class="transition-02"><img src="images/lzxicon/logo.png" alt="李子翔"></h1>
+                                        <h4 class="line">前端工程师 &amp; UI设计师</h4>
+                                        <h6><span class="fa fa-map-marker"></span> 中国 - 上海</h6>
+                                    </div>
+                                    <!-- End 个人信息 -->
+
+                                    <!-- 个人介绍 -->
+                                    <div id="profile_desc">
+                                        <p>
+                                            1、熟悉 HTML/CSS能够编写语义化的HTML,模块化的 CSS ,完成较复杂的布局；了解常见的浏览器 兼容性 问题及解决方案；<br/>
+                                            2、熟悉 JavaScript<br/>
+                                            3、熟悉 jQuery/Bootstrap<br/>
+                                            4、熟悉响应式布局<br/>
+                                            5、熟悉 Node.js
+                                        </p>
+                                    </div>
+                                    <!-- End 个人介绍 -->
+
+                                    <!-- CopyRight -->
+                                    <div class="profile_social">
+                                        <a href="http://www.miitbeian.gov.cn/" target="_blank"><h6>©2016 李子翔 | 沪ICP备16024119号</h6></a>
+                                        <h6 id=time></h6>
+                                        <script>
+                                            (function () {
+                                                //创建补0函数
+                                                function p(s) {
+                                                    return s < 10 ? '0' + s: s;
+                                                }
+                                                setInterval(function () {
+                                                    var str = '';
+                                                    var date = new Date();
+                                                    var year = date.getFullYear();
+                                                    var month = date.getMonth()+1;
+                                                    var day = date.getDate();
+                                                    var hour = date.getHours();
+                                                    var minute = date.getMinutes();
+                                                    var second = date.getSeconds();
+                                                    str = year+'年'+month+'月'+day+'日'+' '+p(hour)+':'+p(minute)+':'+p(second)+' 星期'+'日一二三四五六'.charAt(new Date().getDay());
+                                                    time.innerHTML= str;
+                                                },1000);
+                                            })();
+                                        </script>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <!-- End CopyRight -->
+
+                                </div>
+                                <!--End 头像下信息-->
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-9 flexy_content" style="padding-left: 0;padding-right: 0;">
+                            <!-- 垂直选项卡菜单 -->
+                            <div id="verticalTab">
+
+                                <ul class="resp-tabs-list">
+                                    <li class="tabs-profile hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a profile" data-tab-name="profile">
+                                        <span class="tite-list">我的个人资料</span>
+                                        <i class="fa fa-user icon_menu icon_menu_active"></i>
+                                    </li>
+
+                                    <li class="tabs-resume hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="resume">
+                                        <span class="tite-list">我的技能水平</span>
+                                        <i class="fa fa-tasks icon_menu"></i>
+                                    </li>
+
+                                    <li class="tabs-portfolio hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="portfolio">
+                                        <span class="tite-list">我的作品</span>
+                                        <i class="fa fa-camera icon_menu"></i>
+                                    </li>
+
+                                    <li class="tabs-blog hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="blog">
+                                        <span class="tite-list">我的博客园</span>
+                                        <i class="fa fa-weibo icon_menu"></i>
+                                    </li>
+
+                                    <li class="tabs-contact hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="contact" style="margin-bottom: 48px !important;">
+                                        <span class="tite-list">联系我</span>
+                                        <i class="fa fa-envelope icon_menu"></i>
+                                    </li>
+
+                                    <a href="http://blog.lizixiang.cn" target="_blank" id="print"  title="访问我的博客" data-toggle="tooltip"><i class="fa fa-wordpress icon_print"></i> </a>
+                                    <a href="uploads/李子翔简历.pdf" id="downlowd" title="下载我的简历" data-toggle="tooltip" target="_blank"><i class="fa fa-download icon_print"></i> </a>
+                                </ul>
+                                <!-- end 技能列表 -->
+
+                                <!-- resp-tabs-container -->
+                                <div class="resp-tabs-container">
+
+                                    <!-- 个人资料 -->
+                                    <div id="profile" class="content_2">
+
+                                        <!-- 标题 -->
+                                        <h1 class="h-bloc">我的 - 个人资料</h1>
+
+                                        <div class="row top-p">
+                                            <div class="col-md-6 profile-l">
+
+                                                <!--关于我-->
+                                                <div class="title_content">
+                                                    <div class="text_content">李子翔</div>
+                                                    <div class="clear"></div>
+                                                </div>
+
+                                                <ul class="about">
+
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-user"></i>
+                                                        <label>姓名</label>
+                                                        <span class="value">李子翔</span>
+                                                        <div class="clear"></div>
+                                                    </li>
+
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-calendar"></i>
+                                                        <label>生日</label>
+                                                        <span class="value">1996-02</span>
+                                                        <div class="clear"></div>
+                                                    </li>
+
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-map-marker"></i>
+                                                        <label>地址</label>
+                                                        <span class="value">黑龙江大学&nbsp;&nbsp;A9</span>
+                                                        <div class="clear"></div>
+                                                    </li>
+
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-phone"></i>
+                                                        <label>手机</label>
+                                                        <span class="value">188 4601 3862</span>
+                                                        <div class="clear"></div>
+                                                    </li>
+
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-envelope"></i>
+                                                        <label>邮箱</label>
+                                                    <span class="value">
+                                                        <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=hen--fPs9ejk7OnF8_z1q-T0q_bq6A" style="text-decoration:none;">
+                                                            lzxvipmail@vip.qq.com
+                                                        </a>
+                                                    </span>
+                                                        <div class="clear"></div>
+                                                    </li>
+
+                                                    <li>
+                                                        <i class="glyphicon glyphicon-globe"></i>
+                                                        <label>个人博客</label>
+                                                        <span class="value"><a href="http://blog.lizixiang.cn/" target="_blank">blog.lizixiang.cn</a></span>
+                                                        <div class="clear"></div>
+                                                    </li>
+
+
+                                                </ul>
+
+                                                <!--个人资料页面个人介绍-->
+                                                <p style="margin-bottom:20px">
+                                                    <i class="fa fa-quote-left"></i>
+                                                    黑龙江大学信息科学与技术学院 2014 级网络工程专业学生 <br/>
+                                                    有扎实的英语功底，以及敏感的互联网思维，极强的学习能力,
+                                                    熟悉网络编辑工作流程，对基本的办公事宜有所了解
+                                                </p>
+
+                                                <p style="margin-bottom:20px">
+                                                    <i class="fa fa-quote-left"></i>
+                                                    本人个性开朗，容易相处，有责任感，团队荣誉感强。
+                                                    本人动手能力极强，对硬件方面动手能力非常强，拆开过笔记本 加过内存条、换过固态硬盘、会配置各种路由器。
+                                                    装过黑苹果，精通各种系统安装
+                                                </p>
+                                                <!--End 个人资料页面个人介绍-->
+
+                                            </div>
+                                            <!-- End 个人资料左边 -->
+
+                                            <!--个人资料页面banner-->
+                                            <div class="col-md-6 profile-r">
+                                                <span style="font-size: 20px" class="cycle-slideshow">个人实战作品</span>
+
+                                                <iframe src="http://v.lizixiang.cn" frameborder="0" class="cycle-slideshow"></iframe>
+                                            </div>
+                                            <!--End 个人资料页面banner-->
+
+                                        </div>
+
+                                        <div class="clear"></div>
+
+                                        <!--哪里可以找到我 -->
+                                        <div class="row" id="services">
+                                            <div class="col-md-12">
+                                                <div class="title_content">
+                                                    <div class="text_content">我可以做什么?</div>
+                                                    <div class="clear"></div>
+                                                </div>
+
+
+                                                <div class="col-md-4 pack-service">
+                                                    <div class="service">
+                                                        <div class="service-icon"><i class="fa fa-html5"></i></div>
+                                                        <div class="service-detail">
+                                                            <h6>前端开发</h6>
+                                                            <p><br/>缺少前端工程师?<br/>放着我来!这是我拿手的好戏,能为你制作出精美漂亮的网页。</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 pack-service">
+                                                    <div class="service">
+                                                        <div class="service-icon"><i class="fa fa-pencil"></i></div>
+                                                        <div class="service-detail">
+                                                            <h6>UI设计</h6>
+                                                            <p><br/>人手不够？<br/>我可以顶上。但坦白讲，我觉得自己的配色没有专业的人那么好。</p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 pack-service">
+                                                    <div class="service">
+                                                        <div class="service-icon"><i class="fa fa-desktop"></i></div>
+                                                        <div class="service-detail">
+                                                            <h6>产品设计</h6>
+                                                            <p>
+                                                                <br/>有大致的方向没有具体思路？让我来好了，我喜欢通过各种资源的整合运用，创造出有生命力的新产品。
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End 哪里可以找到我 -->
+
+                                        <div class="copyrights">Collect from <a href=#" >李子翔</a></div>
+
+                                        <div class="clear"></div>
+                                        <div class="border-list"></div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="bottom-p">
+                                                    <div class="title_content">
+                                                        <div class="text_content">让我帮你</div>
+                                                        <div class="clear"></div>
+                                                    </div>
+
+                                                    <div class="panel-group" id="accordion">
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapse_tabs">
+                                                                        前端开发
+                                                                        <i class="glyphicon glyphicon-chevron-up" style="float: right;font-size: 13px;"></i>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapseOne" class="panel-collapse collapse in">
+                                                                <div class="panel-body">
+                                                                    <i class="fa fa-quote-left"></i>
+                                                                    1.掌握JavaScript语言。<br/>
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;2.熟练运用Photoshop、Sublime text、WebStorm、Chrome等常用网页设计制作软件。<br/>
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;3.精通HTML+CSS网页布局与样式，熟悉HTML5与CSS3。<br/>
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;4.有一定的网页设计能力，偏向欧美简约风格。<br/>
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;5.善用Axure RP、Sketcher等工具制作网站原型。
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapse_tabs">
+                                                                        UI设计
+                                                                        <i class="glyphicon glyphicon-chevron-down" style="float: right;font-size: 13px;"></i>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapseTwo" class="panel-collapse collapse">
+                                                                <div class="panel-body">
+                                                                    <i class="fa fa-quote-left"></i>
+                                                                    1.能熟练运用Photoshop、Sketch、AI等常用图像设计软件<br/>
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;2.有一定的UI设计能力，能够独立完成一些页面样式设计。
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapse_tabs">
+                                                                        其他编程语言
+                                                                        <i class="glyphicon glyphicon-chevron-down" style="float: right;font-size: 13px;"></i>
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div id="collapseThree" class="panel-collapse collapse">
+                                                                <div class="panel-body">
+                                                                    <i class="fa fa-quote-left"></i>
+                                                                    1.掌握Node.js 有Node.js+express框架开发经验<br/>
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;2.能熟练对数据库进行增删改查。<br/>
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;3.掌握C语言C++语言<br/>
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;4.熟悉iOS开发,了解objective-c语言<br/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <!-- End 个人资料 -->
+
+                                    <!-- 技能水平 -->
+                                    <div id="resume" class="content_2">
+                                        <!-- 标题 -->
+                                        <h1 class="h-bloc">我的 - 技能水平</h1>
+
+                                        <div class="row">
+
+                                            <!-- 右侧 -->
+                                            <div class="col-md-6">
+
+                                                <!-- .title_content -->
+                                                <div class="title_content" style="float: none;">
+                                                    <div class="text_content">UI设计</div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <!-- /.title_content -->
+
+                                                <div class="skills">
+                                                    <!-- .skillbar -->
+                                                    <div class="skillbar clearfix" data-percent="85%">
+                                                        <div class="skillbar-title"><span>Photoshop</span></div>
+                                                        <div class="skillbar-bar"></div>
+                                                        <div class="skill-bar-percent">85%</div>
+                                                    </div>
+
+                                                    <!-- /.skillbar -->
+
+                                                    <!-- .skillbar -->
+                                                    <div class="skillbar clearfix" data-percent="70%">
+                                                        <div class="skillbar-title"><span>Sketch</span></div>
+                                                        <div class="skillbar-bar"></div>
+                                                        <div class="skill-bar-percent">70%</div>
+                                                    </div>
+                                                    <!-- /.skillbar -->
+
+                                                    <!-- .skillbar -->
+                                                    <div class="skillbar clearfix" data-percent="55%">
+                                                        <div class="skillbar-title"><span>Illustrateur</span></div>
+                                                        <div class="skillbar-bar"></div>
+                                                        <div class="skill-bar-percent">55%</div>
+                                                    </div>
+                                                    <!-- /.skillbar -->
+                                                </div>
+
+
+                                                <!-- .title_content -->
+                                                <div class="title_content" style="float: none;">
+                                                    <div class="text_content">编程水平</div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <!-- /.title_content -->
+
+                                                <div class="skills">
+                                                    <!-- .skillbar -->
+                                                    <div class="skillbar clearfix" data-percent="90%">
+                                                        <div class="skillbar-title"><span>Html5</span></div>
+                                                        <div class="skillbar-bar"></div>
+                                                        <div class="skill-bar-percent">90%</div>
+                                                    </div>
+                                                    <!-- /.skillbar -->
+
+                                                    <!-- .skillbar -->
+                                                    <div class="skillbar clearfix" data-percent="90%">
+                                                        <div class="skillbar-title"><span>CSS3</span></div>
+                                                        <div class="skillbar-bar"></div>
+                                                        <div class="skill-bar-percent">90%</div>
+                                                    </div>
+                                                    <!-- /.skillbar -->
+
+                                                    <!-- .skillbar -->
+                                                    <div class="skillbar clearfix" data-percent="80%">
+                                                        <div class="skillbar-title"><span>JavaScript</span></div>
+                                                        <div class="skillbar-bar"></div>
+                                                        <div class="skill-bar-percent">80%</div>
+                                                    </div>
+                                                    <!-- /.skillbar -->
+
+                                                    <!-- .skillbar -->
+                                                    <div class="skillbar clearfix" data-percent="70%">
+                                                        <div class="skillbar-title"><span>Node.js</span></div>
+                                                        <div class="skillbar-bar"></div>
+                                                        <div class="skill-bar-percent">70%</div>
+                                                    </div>
+                                                    <!-- /.skillbar -->
+
+                                                    <!-- .skillbar -->
+                                                    <div class="skillbar clearfix" data-percent="75%">
+                                                        <div class="skillbar-title"><span>C</span></div>
+                                                        <div class="skillbar-bar"></div>
+                                                        <div class="skill-bar-percent">75%</div>
+                                                    </div>
+                                                    <!-- /.skillbar -->
+
+                                                    <!-- .skillbar -->
+                                                    <div class="skillbar clearfix" data-percent="65%">
+                                                        <div class="skillbar-title"><span>C++</span></div>
+                                                        <div class="skillbar-bar"></div>
+                                                        <div class="skill-bar-percent">65%</div>
+                                                    </div>
+                                                    <!-- /.skillbar -->
+
+                                                    <!-- .skillbar -->
+                                                    <div class="skillbar clearfix" data-percent="45%">
+                                                        <div class="skillbar-title"><span>Objective-C</span></div>
+                                                        <div class="skillbar-bar"></div>
+                                                        <div class="skill-bar-percent">45%</div>
+                                                    </div>
+                                                    <!-- /.skillbar -->
+                                                </div>
+
+
+                                                <!-- .title_content -->
+                                                <div class="title_content" style="float: none;">
+                                                    <div class="text_content">办公技能</div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <!-- /.title_content -->
+
+                                                <div class="skills">
+                                                    <!-- .skillbar -->
+                                                    <div class="skillbar clearfix" data-percent="85%">
+                                                        <div class="skillbar-title"><span> Excel</span></div>
+                                                        <div class="skillbar-bar"></div>
+                                                        <div class="skill-bar-percent">85%</div>
+                                                    </div>
+                                                    <!-- /.skillbar -->
+
+                                                    <!-- .skillbar -->
+                                                    <div class="skillbar clearfix " data-percent="95%">
+                                                        <div class="skillbar-title"><span> Word</span></div>
+                                                        <div class="skillbar-bar"></div>
+                                                        <div class="skill-bar-percent">95%</div>
+                                                    </div>
+                                                    <!-- /.skillbar -->
+
+                                                    <!-- .skillbar -->
+                                                    <div class="skillbar clearfix " data-percent="80%">
+                                                        <div class="skillbar-title"><span> PPT</span></div>
+                                                        <div class="skillbar-bar"></div>
+                                                        <div class="skill-bar-percent">80%</div>
+                                                    </div>
+                                                    <!-- /.skillbar -->
+
+                                                </div>
+
+
+                                                <!-- .title_content -->
+                                                <div class="title_content" style="float: none;">
+                                                    <div class="text_content">语言水平</div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <!-- /.title_content -->
+
+                                                <div class="skills">
+                                                    <!-- .skillbar -->
+                                                    <div class="skillbar clearfix" data-percent="85%">
+                                                        <div class="skillbar-title"><span>英语</span></div>
+                                                        <div class="skillbar-bar"></div>
+                                                        <div class="skill-bar-percent">85%</div>
+                                                    </div>
+                                                    <!-- /.skillbar -->
+
+                                                    <!-- .skillbar -->
+                                                    <div class="skillbar clearfix " data-percent="30%">
+                                                        <div class="skillbar-title"><span>法语</span></div>
+                                                        <div class="skillbar-bar"></div>
+                                                        <div class="skill-bar-percent">30%</div>
+                                                    </div>
+                                                    <!-- /.skillbar -->
+
+                                                    <!-- .skillbar -->
+                                                    <div class="skillbar clearfix " data-percent="99%">
+                                                        <div class="skillbar-title"><span>汉语</span></div>
+                                                        <div class="skillbar-bar"></div>
+                                                        <div class="skill-bar-percent">99%</div>
+                                                    </div>
+                                                    <!-- /.skillbar -->
+
+                                                </div>
+
+                                                <!-- .title_content -->
+                                                <div class="title_content" style="float: none;">
+                                                    <div class="text_content">个人爱好</div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <!-- /.title_content -->
+
+                                                <div class="skills">
+                                                    <!-- .skillbar -->
+                                                    <div class="skillbar clearfix" data-percent="30%">
+                                                        <div class="skillbar-title"><span>唱歌</span></div>
+                                                        <div class="skillbar-bar"></div>
+                                                        <div class="skill-bar-percent">30%</div>
+                                                    </div>
+                                                    <!-- /.skillbar -->
+
+                                                    <!-- .skillbar -->
+                                                    <div class="skillbar clearfix " data-percent="95%">
+                                                        <div class="skillbar-title"><span>运动</span></div>
+                                                        <div class="skillbar-bar"></div>
+                                                        <div class="skill-bar-percent">95%</div>
+                                                    </div>
+                                                    <!-- /.skillbar -->
+
+                                                    <!-- .skillbar -->
+                                                    <div class="skillbar clearfix " data-percent="85%">
+                                                        <div class="skillbar-title"><span>摄影</span></div>
+                                                        <div class="skillbar-bar"></div>
+                                                        <div class="skill-bar-percent">85%</div>
+                                                    </div>
+                                                    <!-- /.skillbar -->
+
+                                                    <!-- .skillbar -->
+                                                    <div class="skillbar clearfix " data-percent="70%">
+                                                        <div class="skillbar-title"><span>旅游</span></div>
+                                                        <div class="skillbar-bar"></div>
+                                                        <div class="skill-bar-percent">70%</div>
+                                                    </div>
+                                                    <!-- /.skillbar -->
+                                                </div>
+
+                                                <!-- .title_content -->
+                                                <div class="title_content" style="float: none;">
+                                                    <div class="text_content">我的个人简历</div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <!-- /.title_content -->
+
+                                                <!-- 下载我的简历 -->
+                                                <a class="download" style="margin:0;float: left;" href="uploads/李子翔简历.pdf" target="_blank">
+                                                    <span data-hover="下载我的简历"><i class="glyphicon glyphicon-download-alt"></i>下载我的简历</span>
+                                                </a>
+                                                <!-- /下载我的简历 -->
+
+                                            </div>
+                                            <!-- /.resume-right -->
+
+
+
+                                            <!-- .resume-left -->
+                                            <div class="col-md-6 resume-left">
+                                                <!-- .title_content -->
+                                                <div class="title_content" style="margin-bottom:5px">
+                                                    <div class="text_content">工作经验</div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <!-- /.title_content -->
+
+                                                <!-- .attributes -->
+                                                <ul class="attributes">
+                                                    <li class="first">
+                                                        <h5>前端开发 <span class="duration"><i class="fa fa-calendar color"></i> 2016 - 2017</span></h5>
+                                                        <h6><span class="fa fa-briefcase"></span> 黑龙江大学</h6>
+                                                        <p>担任《创客文化平台》项目负责人,社团负责人,前端开发负责人。 <br/>该项目是: <br/>
+                                                            1.基于O2O模式的创客文化平台建设与运营 <br/>
+                                                            2.基于“互联网+”的学生就业指导平台的研发与运营
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <h5>UI设计 <span class="duration"><i class="fa fa-calendar color"></i> 2016.1.1-2016.2.20</span></h5>
+                                                        <h6><span class="fa fa-html5"></span>上海忆久软件服务有限公司</h6>
+                                                        <p>于2016年1月1日至2016年2月20日在忆久软件服务有限公司实习,参与开发《树说家语》APP,实习职位是APP开发前台设计助理</p>
+                                                    </li>
+
+                                                </ul>
+                                                <!-- /.attributes -->
+                                                <br>
+
+                                                <!-- .title_content -->
+                                                <div class="title_content">
+                                                    <div class="text_content">教育背景</div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <!-- /.title_content -->
+
+                                                <!-- .attributes -->
+                                                <ul class="attributes">
+                                                    <li class="first">
+                                                        <h5>工科学士学位<span class="duration"><i class="fa fa-calendar color"></i> 2014 - 2018</span></h5>
+                                                        <h6><span class="fa fa-book"></span>黑龙江大学&nbsp;网络工程</h6>
+                                                        <p> 修读的是 <i>网络工程专业</i> <br/>
+                                                            在校期间参加学院学生会工作，于秘书处工作，制作视频，微信公众号等工作
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <!-- /.attributes -->
+                                                <br>
+
+
+                                                <!-- .title_content -->
+                                                <div class="title_content">
+                                                    <div class="text_content">获得证书</div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <!-- /.title_content -->
+
+                                                <!-- .attributes -->
+                                                <ul class="attributes">
+                                                    <li class="first">
+                                                        <h5>竞赛<span class="duration"><i class="fa fa-calendar color"></i> 2016.9.14</span></h5>
+                                                        <h6><span class="fa fa-trophy"></span>互联网+大赛 第二名</h6>
+                                                        <p>黑龙江省互联网+大赛 省赛第二名</p>
+                                                    </li>
+                                                </ul>
+                                                <br>
+                                                <ul class="attributes">
+                                                    <li class="first">
+                                                        <h5>语言类<span class="duration"><i class="fa fa-calendar color"></i> 2015.6.18</span></h5>
+                                                        <h6><span class="fa fa-trophy"></span>英语CET-4</h6>
+                                                        <p>英语四级</p>
+                                                    </li>
+                                                </ul>
+                                                <!-- /.attributes -->
+                                                <br>
+
+                                            </div>
+                                            <!-- /.resume-left -->
+                                        </div>
+
+                                        <div style="clear: both"></div>
+
+
+                                        <!-- client reference -->
+                                        <div class="row">
+                                            <div class="col-md-12">
+
+                                                <div class="reference clearfix">
+
+                                                    <!-- .title_content -->
+                                                    <div class="title_content" style="margin-bottom:5px">
+                                                        <div class="text_content">留言板</div>
+                                                        <div class="clear"></div>
+                                                    </div>
+                                                    <!-- /.title_content -->
+
+
+                                                    <!-- 多说评论框 start -->
+                                                    <div class="ds-thread" data-thread-key="我的技能" data-title="web简历" data-url="http://www.lizixiang.cn"></div>
+                                                    <!-- 多说评论框 end -->
+
+                                                </div>
+                                            </div>
+
+                                            <div class="copyrights">Collect from <a href="javascript:void(0);" >李子翔的简历</a></div>
+
+
+                                            <div style="clear: both"></div>
+                                        </div>
+
+                                    </div>
+                                    <!-- End技能水平 -->
+
+                                    <!-- 图像作品 -->
+                                    <div id="portfolio" class="content_2">
+
+                                        <!-- .title -->
+                                        <h1 class="h-bloc">我的 - 图像作品</h1>
+
+                                        <!-- .container-portfolio -->
+                                        <div class="container-portfolio">
+
+                                            <!-- #filters -->
+                                            <ul id="filters" class="clearfix">
+                                                <li><span class="filter active" data-filter="views foods UI logo">所有</span></li>
+                                                <li><span class="filter" data-filter="views">美景</span></li>
+                                                <li><span class="filter" data-filter="foods">美食</span></li>
+                                                <li><span class="filter" data-filter="UI">UI设计</span></li>
+                                                <li><span class="filter" data-filter="logo">Logo</span></li>
+                                            </ul>
+                                            <!-- /#filters -->
+
+                                            <!-- #portfoliolist -->
+                                            <div id="portfoliolist">
+
+                                                <!-- .portfolio -->
+                                                <div class="portfolio logo" data-cat="logo">
+                                                    <!-- .portfolio-wrapper -->
+                                                    <div class="portfolio-wrapper">
+                                                        <a href="images/portfolio/1.jpg" rel="portfolio" title="创客文化平台logo,李子翔设计,2016.4">
+                                                            <img src="images/portfolio/1.jpg" alt="创客文化平台logo,李子翔设计,2016.4" />
+                                                            <div class="label">
+                                                                <div class="label-text">
+                                                                    <a class="text-title">创客文化平台</a>
+                                                                    <span class="text-category">Logo</span>
+                                                                </div>
+                                                                <div class="label-bg"></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <!-- /.portfolio-wrapper -->
+                                                </div>
+                                                <!-- /.portfolio -->
+                                                <!-- .portfolio -->
+                                                <div class="portfolio views" data-cat="views">
+                                                    <!-- .portfolio-wrapper -->
+                                                    <div class="portfolio-wrapper">
+                                                        <a href="images/portfolio/2.jpg" title="2015.7.30,意大利" rel="portfolio">
+
+                                                            <img src="images/portfolio/2.jpg" alt="2015.7.30,意大利" />
+                                                            <div class="label">
+                                                                <div class="label-text">
+                                                                    <a class="text-title">拍摄于意大利Via Dante</a>
+                                                                    <span class="text-category">美景</span>
+                                                                </div>
+                                                                <div class="label-bg"></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <!-- /.portfolio-wrapper -->
+                                                </div>
+                                                <!-- /.portfolio -->
+
+                                                <!-- .portfolio -->
+                                                <div class="portfolio views" data-cat="views">
+                                                    <!-- .portfolio-wrapper -->
+                                                    <div class="portfolio-wrapper">
+                                                        <a href="images/portfolio/3.jpg" title="拍摄于法国凡尔赛宫" rel="portfolio">
+                                                            <img src="images/portfolio/3.jpg" alt="拍摄于法国凡尔赛宫" />
+                                                            <div class="label">
+                                                                <div class="label-text">
+                                                                    <a class="text-title">凡尔赛宫</a>
+                                                                    <span class="text-category">美景</span>
+                                                                </div>
+                                                                <div class="label-bg"></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <!-- /.portfolio-wrapper -->
+                                                </div>
+                                                <!-- /.portfolio -->
+
+                                                <!-- .portfolio -->
+                                                <div class="portfolio foods" data-cat="foods">
+                                                    <!-- .portfolio-wrapper -->
+                                                    <div class="portfolio-wrapper">
+                                                        <a href="images/portfolio/4.jpg" title="拍摄于意大利GUCCI旗舰店" rel="portfolio">
+                                                            <img src="images/portfolio/4.jpg" alt="拍摄于意大利GUCCI旗舰店" />
+                                                            <div class="label">
+                                                                <div class="label-text">
+                                                                    <a class="text-title">GUCCI旗舰店</a>
+                                                                    <span class="text-category">美食</span>
+                                                                </div>
+                                                                <div class="label-bg"></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <!-- /.portfolio-wrapper -->
+                                                </div>
+                                                <!-- /.portfolio -->
+
+                                                <!-- .portfolio -->
+                                                <div class="portfolio views" data-cat="views">
+                                                    <!-- .portfolio-wrapper -->
+                                                    <div class="portfolio-wrapper">
+                                                        <a href="images/portfolio/5.jpg" title="瑞士,拍摄于2015.8.1" rel="portfolio">
+                                                            <img src="images/portfolio/5.jpg" alt="瑞士,拍摄于2015.8.1" />
+                                                            <div class="label">
+                                                                <div class="label-text">
+                                                                    <a class="text-title">瑞士</a>
+                                                                    <span class="text-category">美景</span>
+                                                                </div>
+                                                                <div class="label-bg"></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <!-- /.portfolio-wrapper -->
+                                                </div>
+                                                <!-- /.portfolio -->
+
+                                                <!-- .portfolio -->
+                                                <div class="portfolio views" data-cat="views">
+                                                    <!-- .portfolio-wrapper -->
+                                                    <div class="portfolio-wrapper">
+                                                        <a href="images/portfolio/6.jpg" title="拍摄于法国,2015.8.5,塞纳河" rel="portfolio">
+                                                            <img src="images/portfolio/6.jpg" alt="拍摄于法国,2015.8.5,塞纳河" />
+                                                            <div class="label">
+                                                                <div class="label-text">
+                                                                    <a class="text-title">法国-塞纳河-中国城</a>
+                                                                    <span class="text-category">美景</span>
+                                                                </div>
+                                                                <div class="label-bg"></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <!-- /.portfolio-wrapper -->
+                                                </div>
+                                                <!-- /.portfolio -->
+
+                                                <!-- .portfolio -->
+                                                <div class="portfolio UI" data-cat="UI">
+                                                    <!-- .portfolio-wrapper -->
+                                                    <div class="portfolio-wrapper">
+                                                        <a href="images/portfolio/7.jpg" title="创客平台首页设计图" rel="portfolio">
+                                                            <img src="images/portfolio/7.jpg" alt="创客平台首页设计图" />
+                                                            <div class="label">
+                                                                <div class="label-text">
+                                                                    <a class="text-title">创客平台首页设计图</a>
+                                                                    <span class="text-category">UI设计</span>
+                                                                </div>
+                                                                <div class="label-bg"></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <!-- /.portfolio-wrapper -->
+                                                </div>
+                                                <!-- /.portfolio -->
+
+                                                <!-- .portfolio -->
+                                                <div class="portfolio UI" data-cat="UI">
+                                                    <!-- .portfolio-wrapper -->
+                                                    <div class="portfolio-wrapper">
+                                                        <a href="images/portfolio/8.jpg" rel="portfolio" title="参与设计树说家语APP家谱界面">
+                                                            <img src="images/portfolio/8.jpg" alt="参与设计树说家语APP家谱界面" />
+                                                            <div class="label">
+                                                                <div class="label-text">
+                                                                    <a class="text-title">树说家语APP家谱界面</a>
+                                                                    <span class="text-category">UI设计</span>
+                                                                </div>
+                                                                <div class="label-bg"></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <!-- /.portfolio-wrapper -->
+                                                </div>
+                                                <!-- /.portfolio -->
+
+                                                <!-- .portfolio -->
+                                                <div class="portfolio views" data-cat="views">
+                                                    <!-- .portfolio-wrapper -->
+                                                    <div class="portfolio-wrapper">
+                                                        <a href="images/portfolio/9.jpg" title="拍摄于2015.8.1,Bern - Switzerland Tourism" rel="portfolio">
+                                                            <img src="images/portfolio/9.jpg" alt="拍摄于2015.8.1,Bern - Switzerland Tourism" />
+                                                            <div class="label">
+                                                                <div class="label-text">
+                                                                    <a class="text-title">Bern - Switzerland Tourism</a>
+                                                                    <span class="text-category">美景</span>
+                                                                </div>
+                                                                <div class="label-bg"></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <!-- /.portfolio-wrapper -->
+                                                </div>
+                                                <!-- /.portfolio -->
+                                                <!-- .portfolio -->
+                                                <div class="portfolio views" data-cat="views">
+                                                    <!-- .portfolio-wrapper -->
+                                                    <div class="portfolio-wrapper">
+                                                        <a href="images/portfolio/10.jpg" title="拍摄于2015.7.29,威尼斯-水城" rel="portfolio">
+                                                            <img src="images/portfolio/10.jpg" alt="拍摄于2015.7.29,威尼斯-水城" />
+                                                            <div class="label">
+                                                                <div class="label-text">
+                                                                    <a class="text-title">威尼斯-水城</a>
+                                                                    <span class="text-category">美景</span>
+                                                                </div>
+                                                                <div class="label-bg"></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <!-- /.portfolio-wrapper -->
+                                                </div>
+                                                <!-- /.portfolio -->
+
+                                                <!-- .portfolio -->
+                                                <div class="portfolio foods" data-cat="foods">
+                                                    <!-- .portfolio-wrapper -->
+                                                    <div class="portfolio-wrapper">
+                                                        <a href="images/portfolio/11.jpg" title="剔骨牛排" rel="portfolio">
+                                                            <img src="images/portfolio/11.jpg" alt="剔骨牛排" />
+                                                            <div class="label">
+                                                                <div class="label-text">
+                                                                    <a class="text-title">剔骨牛排</a>
+                                                                    <span class="text-category">美食</span>
+                                                                </div>
+                                                                <div class="label-bg"></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <!-- /.portfolio-wrapper -->
+                                                </div>
+                                                <!-- /.portfolio -->
+
+                                                <!-- .portfolio -->
+                                                <div class="portfolio foods" data-cat="foods">
+                                                    <!-- .portfolio-wrapper -->
+                                                    <div class="portfolio-wrapper">
+                                                        <a href="images/portfolio/12.jpg" title="拍摄于2016.4.2" rel="portfolio">
+                                                            <img src="images/portfolio/12.jpg" alt="拍摄于2016.4.2" />
+                                                            <div class="label">
+                                                                <div class="label-text">
+                                                                    <a class="text-title">马卡龙</a>
+                                                                    <span class="text-category">美食</span>
+                                                                </div>
+                                                                <div class="label-bg"></div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <!-- /.portfolio-wrapper -->
+                                                </div>
+                                                <!-- /.portfolio -->
+
+                                                <div class="clear"></div>
+
+                                            </div>
+                                            <!-- #portfoliolist -->
+                                        </div>
+                                        <!-- /.container-portfolio -->
+                                    </div>
+                                    <!-- End 图像作品 -->
+
+                                    <!-- .blog -->
+                                    <div  class="content_2">
+                                        <a href="http://blog.lizixiang.cn" target="_blank"><h1 class="h-bloc">我的 - 博客园<i style="float: right;" class="fa fa-spinner fa-spin"></i></h1></a><br>
+                                        <span style="text-align: center;display: block;">loading...</span>
+                                        <iframe style="width:100%;height: 490px;margin-top: -55px;" src="http://blog.lizixiang.cn" frameborder="0"></iframe>
+
+                                    </div>
+                                    <!-- End .blog -->
+
+                                    <!-- 联系我 -->
+                                    <div id="contact" class="content_2">
+
+                                        <h1 class="h-bloc">联系我</h1>
+
+                                        <div class="row">
+
+                                            <div class="col-lg-12">
+                                                <div id="map">
+                                                    <div style="height:300px;border:none;" id="dituContent"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12">
+                                                <div class="row" id="contact-user">
+                                                    <div class="col-md-5">
+                                                        <div class="contact-info">
+
+                                                            <div class="title_content" style="float: none;">
+                                                                <div class="text_content">我的联系方式</div>
+                                                                <div class="clear"></div>
+                                                            </div>
+
+                                                            <ul id="text_content_icon">
+                                                                <li><span class="span-info" style="margin-right: 20px"><i class="fa fa-phone"></i> 电话:</span> 188 4601 3862</li>
+                                                                <li><span class="span-info" style="margin-right: 20px"><i class="fa fa-envelope"></i> 邮箱:</span>
+                                                                    <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=hen--fPs9ejk7OnF8_z1q-T0q_bq6A" style="text-decoration:none;">
+                                                                        lzxvipmail@vip.qq.com
+                                                                    </a>
+                                                                </li>
+                                                                <li><span class="span-info" style="margin-right: 25px"><i class="fa fa-globe"></i> 网站:</span><a href="http://www.lizixiang.cn">www.lizixiang.cn</a></li>
+                                                                <li><span class="span-info" style="margin-right: 25px"><i class="fa fa-weibo"></i> 博客:</span><a href="http://blog.lizixiang.cn">blog.lizixiang.cn</a></li>
+                                                                <li><span class="span-info" style="margin-right: 10px"><i class="fa fa-github"></i> Github:</span><a href="https://github.com/myvipbackup2" target="_blank">github.com/myvipbackup2</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- end联系方式 -->
+                                                        <div class="clear"></div>
+
+
+                                                    </div>
+
+                                                    <div class="col-md-7">
+                                                        <!-- 个人案列 -->
+                                                        <div class="title_content" style="float: none;">
+                                                            <div class="text_content">实战案例</div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <div class="profile_social">
+                                                            <a href="http://www.lizixiang.cn/mi" target="_blank">小米官网实战</a><br/>
+                                                            <a href="http://love.lizixiang.cn" target="_blank">Canvas恋爱计时</a><br/>
+                                                            <a href="http://v.lizixiang.cn" target="_blank">Ajax音乐播放器</a><br/>
+                                                            <a href="http://g.lizixiang.cn/puzzle" target="_blank">Js拼图小游戏</a><br/>
+                                                            <a href="http://g.lizixiang.cn/eliminate" target="_blank">Js消除小游戏</a>
+                                                            <div class="clear"></div>
+                                                        </div>
+
+                                                        <!-- end个人案列 -->
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12">
+                                                <div class="title_content" style="float: none;">
+                                                    <div class="text_content">公共评论</div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                                <!--评论开始-->
+                                                <!-- 多说评论框 start -->
+                                                <div class="ds-thread" data-thread-key="联系我" data-title="web简历" data-url="http://www.lizixiang.cn"></div>
+                                                <!-- 多说评论框 end -->
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- End 联系我 -->
+
+                                </div>
+                                <!-- End #resp-tabs-container -->
+
+                            </div>
+                            <!-- End 垂直选项卡菜单 -->
+
+                        </div><!-- End flexy_content -->
+
+
+                    </div><!-- End row -->
+
+                </div><!-- End col-md-12 -->
+
+            </div><!-- End row -->
+
+        </div><!-- End container -->
+
+    </section>
+    <!-- End Content -->
+
+</div>
+<!-- End 面板 -->
+
+<!-- 选择器 -->
+<div id="custumize-style">
+    <h2>自定义风格<a href="#" class="switcher"><i class="fa fa-cogs icon-switcher"></i></a></h2>
+    <div>
+        <h3>主题颜色</h3>
+        <ul class="colors-style" id="color1">
+
+            <li><a href="#" class="gray"></a></li>
+            <li><a href="#" class="green"></a></li>
+            <li><a href="#" class="blue"></a></li>
+            <li><a href="#" class="red"></a></li>
+            <li><a href="#" class="yellow"></a></li>
+
+            <li><a href="#" class="DarkBlue"></a></li>
+            <li><a href="#" class="orange"></a></li>
+            <li><a href="#" class="rose"></a></li>
+            <li><a href="#" class="lightseagreen"></a></li>
+            <li><a href="#" class="darkolivegreen"></a></li>
+
+        </ul>
+    </div>
+    <div>
+
+        <h3 class="layouts">动画效果</h3>
+        <div>
+
+            <select name="one" class="dropdown-select">
+                <optgroup label="弹入效果">
+                    <option value="bounceIn" selected>bounceIn</option>
+                    <option value="bounceInDown">bounceInDown</option>
+                    <option value="bounceInLeft">bounceInLeft</option>
+                    <option value="bounceInRight">bounceInRight</option>
+                    <option value="bounceInUp">bounceInUp</option>
+                </optgroup>
+
+                <optgroup label="渐显效果">
+                    <option value="fadeIn">fadeIn</option>
+                    <option value="fadeInDown">fadeInDown</option>
+                    <option value="fadeInLeft">fadeInLeft</option>
+                    <option value="fadeInRight">fadeInRight</option>
+                    <option value="fadeInUp">fadeInUp</option>
+                </optgroup>
+            </select>
+
+        </div>
+
+        <h3 class="layouts" style="padding-top:5px">背景效果</h3>
+        <div id="show">
+
+            <div class="clean-check">
+
+                <input type="radio" id="s1" name="layout" value="bg_color" checked="checked" />
+                <label for="s1"><span></span>静态</label>
+
+                <input type="radio" id="s2" name="layout" value="bg_slider" />
+                <label for="s2"><span></span>动画</label>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div>
+        <h3>纯色背景</h3>
+        <ul class="colors-style bgsolid" id="bgsolid">
+            <li><a href="#" class="gray-bg"></a></li>
+            <li><a href="#" class="green-bg"></a></li>
+            <li><a href="#" class="blue-bg"></a></li>
+            <li><a href="#" class="red-bg"></a></li>
+            <li><a href="#" class="yellow-bg"></a></li>
+        </ul>
+    </div>
+    <div>
+        <h3>纹理背景</h3>
+        <ul class="colors-style bg" id="bg">
+            <li><a href="#" class="bg1"></a></li>
+            <li><a href="#" class="bg2"></a></li>
+            <li><a href="#" class="bg3"></a></li>
+            <li><a href="#" class="bg4"></a></li>
+            <li><a href="#" class="bg5"></a></li>
+        </ul>
+    </div>
+    <div id="button-reset"><a href="#" class="button color DarkBlue boxed">恢复默认</a></div>
+</div>
+<!-- End 选择器 -->
+
+<!-- 右侧边栏 -->
+<div class="toolbar">
+    <a href="javascript:void(0);" class="toolbar-item">
+                <span class="toolbar-btn">
+                    <i class="toolbar-icon fa fa-wechat"></i>
+                    <span class="toolbar-text">我的<br>微信</span>
+                </span>
+        <span class="toolbar-layer toolbar-layer-weixin"></span>
+    </a>
+    <a href="javascript:void(0);" class="toolbar-item">
+                <span class="toolbar-btn">
+                    <i class="toolbar-icon fa fa-bar-chart"></i>
+                    <span class="toolbar-text">
+                        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260022980'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1260022980%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+                    </span>
+                </span>
+    </a>
+</div>
+<!-- End 右侧边栏 -->
+
+<!-- jquery | jQuery -->
+<!--<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>-->
+<!--&lt;!&ndash;防止CDN加载失败,加载本地 jQuery v1.12.3&ndash;&gt;-->
+<!--<script type="text/javascript">-->
+    <!--!window.jQuery && document.write('<script src="js/jquery.min.js"><\/script>');-->
+<!--</script>-->
+
+<!--&lt;!&ndash; Js | bootstrap v3.3.5 &ndash;&gt;-->
+<!--<script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+<!--<script type="text/javascript">-->
+    <!--!window.jQuery && document.write('<script src="js/bootstrap.min.js"><\/script>');-->
+<!--</script>-->
+
+<!--&lt;!&ndash; Js | jquery.cycle 图片滚动插件 &ndash;&gt;-->
+<!--<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>-->
+
+<!--&lt;!&ndash; jquery | rotate and portfolio 无刷新排序插件 &ndash;&gt;-->
+<!--<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>-->
+<!--<script type="text/javascript" src="js/HeadImage.js"></script>-->
+
+<!--&lt;!&ndash; Js | easyResponsiveTabs 响应式 Tab 选项卡 &ndash;&gt;-->
+<!--<script type="text/javascript" src="js/easyResponsiveTabs.min.js"></script>-->
+
+<!--&lt;!&ndash; Js | jquery.cookie &ndash;&gt;-->
+<!--<script type="text/javascript" src="js/jsSwitcher/jquery.cookie.js"></script>-->
+
+<!--&lt;!&ndash; Js | switcher 风格选择器 &ndash;&gt;-->
+<!--<script type="text/javascript" src="js/jsSwitcher/switcher.js"></script>-->
+
+<!--&lt;!&ndash; Js | mCustomScrollbar 自定义滚动条插件 &ndash;&gt;-->
+<!--<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>-->
+
+<!--&lt;!&ndash; jquery | prettyPhoto 图片特效脚本 &ndash;&gt;-->
+<!--<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>-->
+
+<!--&lt;!&ndash;引用百度地图API&ndash;&gt;-->
+<!--<script type="text/javascript" src="http://api.map.baidu.com/api?key=O6SLOgDiuYz42TINEWXNRVxGbypytREQ&v=1.1&services=true"></script>-->
+
+<!--&lt;!&ndash; Js | Main &ndash;&gt;-->
+<!--<script type="text/javascript" src="js/main.js"></script>-->
+
+<!--&lt;!&ndash; Js | 多说 &ndash;&gt;-->
+<!--<script type="text/javascript" src="js/duoshuo.js"></script>-->
+
+</body>
+</html>

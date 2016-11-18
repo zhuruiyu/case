@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #small-box{
+         width:400px;
+         height: 400px;
+         float: left;
+        }
+        #drag{
+            width: 200px;
+            height: 200px;
+            background: #ccc;
+            opacity: 0.5;
+            position: absolute;
+            left: 0;
+            top: 0;
+            /*display: none;*/
+        }
+        #big-box{
+            width: 400px;
+            height: 400px;
+            float: left;
+            /*overflow: hidden;*/
+            /*display: none;*/
+        }
+        /*#big-box img{*/
+            /*width:600px;*/
+            /*height: 800px;*/
+
+        /*}*/
+        #big-img{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <div id="small-box">
+        <img src="img/1.jpg">
+        <div id="drag"></div>
+    </div>
+    <div id="big-box">
+        <img id="big-img" src="img/2.jpg">
+    </div>
+</div>
+
+<script>
+    var oDrag = document.getElementById("drag");
+    var oSmallBox = document.getElementById("small-box");
+    var oBigBox = document.getElementById("big-box");
+     var oBigImg = document.getElementById("big-img");
+
+
+
+
+    oSmallBox.onmouseover = function() {
+
+        oDrag.style.display = "block";
+        oBigBox.style.display = "block";
+    }
+        oSmallBox.onmousemove = function (event) {
+            event = event || window.event;
+            var iLeft = event.clientX - oDrag.offsetWidth / 2;
+            var iTop = event.clientY - oDrag.offsetHeight / 2;
+            if(iLeft < 0){
+                iLeft = 0;
+            }
+            if(iLeft > oSmallBox.offsetWidth - oDrag.offsetWidth){
+                iLeft = oSmallBox.offsetWidth - oDrag.offsetWidth;
+            }
+            if(iTop < 0){
+                iTop = 0;
+            }
+            if(iTop > oSmallBox.offsetHeight - oDrag.offsetHeight){
+                iTop = oSmallBox.offsetHeight - oDrag.offsetHeight;
+            }
+            oDrag.style.left = iLeft +"px";
+            oDrag.style.top = iTop + "px";
+
+//            if(ileft<0){
+//                ileft = 0;
+//            }else if(ileft > document.documentElement.clientWidth - oDrag.offsetWidth){
+//                ileft = document.documentElement.clientWidth - oDrag.offsetWidth;
+//            }
+//            if(itop<0){
+//                itop = 0;
+//            }else if(ileft > document.documentElement.clientHeight - oDrag.offsetHeight){
+//                ileft = document.documentElement.clientHeight - oDrag.offsetHeight;
+//            }
+//
+//            if(ileft<0){
+//                ileft = 0;
+//            }else if(ileft > 300 - oDrag.offsetWidth/2 ){
+//                ileft = 300
+//            }
+           var scaleX
+
+
+
+
+
+
+
+
+
+            oBigImg.style.left = -bLeft +"px";
+            oBigImg.style.top = -bTop +"px";
+
+
+
+        }
+        oSmallBox.onmouseout = function(){
+            oDrag.style.display = "none";
+            oBigBox.style.display = "none";
+        }
+
+
+</script>
+
+</body>
+</html>

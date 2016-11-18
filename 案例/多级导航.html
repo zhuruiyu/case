@@ -78,11 +78,11 @@
         </li>
     </ul>
     <script>
-         oMenu = document.getElementById("menu");
-         aLi = oMenu.getElementsByTagName("li");
+        var oMenu = document.getElementById("menu");
+         var aLi = oMenu.getElementsByTagName("li");
 
         for(var i=0;i<aLi.length;i++){
-            if(aLi[i].className="main-menu"){
+            if(aLi[i].className=="main-menu"){                   //注意是双等号
                 aLi[i].onmouseover = function(){
                     var oSubMenu = this.getElementsByTagName('ul')[0];     //为何用当前?????????
                     oSubMenu.style.display = "block";
