@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+      *{
+          padding: 0px;
+          margin: 0px;
+      }
+        #container{
+            width: 400px;
+            height: 500px;
+            background: black;
+            position: relative;
+            overflow: hidden;
+            margin: 50px auto;
+        }
+        #content{
+         width: 380px;
+            background:#ccc;
+            float: left;
+            position: relative;
+        }
+        #scroll-bar{
+            width: 20px;
+            height: 500px;
+            background: green;
+            float: left;
+
+        }
+        #scroll-btn{
+            width: 20px;
+            height: 30px;
+            background: black;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="content">
+      钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱
+    </div>
+    <div id="scroll-bar">
+     <span id="scroll-btn"></span>
+    </div>
+</div>
+
+
+<script>
+    var oContainer = document.getElementById("container");
+    var oScrollBtn = document.getElementById("scroll-btn");
+   var oContent = document.getElementById("content");
+  var oScrollBar = document.getElementById("scroll-bar");
+
+
+
+    oScrollBtn.onmousedown = function(e){
+           e=e||window.event;
+           var iDIsY = e.clientY - oScrollBtn.offsetTop
+
+        document.onmousemove = function(e){
+            e = e||window.event;
+            var iTop = e.clientY - iDIsY;
+
+            if(iTop<0){
+                iTop = 0;
+            }
+            if(iTop> oScrollBar.offsetHeight - oScrollBtn.offsetHeight){
+                iTop = oScrollBar.offsetHeight - oScrollBtn.offsetHeight;
+            }
+
+            oScrollBtn.style.top = iTop + "px";
+            var scale = oScrollBtn.offsetTop/(oScrollBar.offsetHeight - oScrollBtn.offsetHeight);
+            var  cTop = scale*(oContent.offsetHeight - oContainer.offsetHeight);
+
+            oContent.style.top = -cTop + "px";
+            return false;
+
+        }
+        document.onmouseup = function(){
+            document.onmousemove = null;
+        }
+    }
+</script>
+</body>
+</html>
