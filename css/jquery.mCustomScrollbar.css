@@ -1,5 +1,3 @@
-/* basic scrollbar styling */
-/* vertical scrollbar */
 .mCSB_container{width:auto;margin-right:30px;overflow:hidden;padding: 15px;}
 .mCSB_container.mCS_no_scrollbar{margin-right:0;}
 .mCS_disabled>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar,

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        #menu h3{
+            width: 200px;
+            height: 30px;
+            background: black;
+            color: white;
+            /*text-align: center;*/
+            line-height: 30px;
+        }
+        #menu li{
+            width: 200px;
+        }
+        #menu .sub-menu{
+            border: 1px solid #000;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<ul id="menu">
+    <li>
+        <h3>管理区</h3>
+        <ul class="sub-menu">
+            <li><a href="#">001</a></li>
+            <li><a href="#">002</a></li>
+            <li><a href="#">003</a></li>
+        </ul>
+    </li>
+    <li>
+        <h3>交流区</h3>
+        <ul class="sub-menu">
+            <li><a href="#">001</a></li>
+            <li><a href="#">002</a></li>
+            <li><a href="#">003</a></li>
+        </ul>
+    </li>
+</ul>
+
+<script>
+    var oMenu = document.getElementById("menu");
+    var oSubMenu = oMenu.getElementById("sub-menu");
+    var aH3 = oMenu.getElementsByTagName("h3");
+
+
+    for(var i=0;i<aH3.length;i++){
+
+    }
+</script>
+</body>
+</html>
