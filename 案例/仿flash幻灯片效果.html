@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>仿flash效果幻灯片</title>
+    <style>
+        *{
+         margin: 0px;
+         padding: 0px;
+        }
+         ul{
+             list-style: none;
+         }
+       #container{
+           width: 600px;
+           height: 540px;
+           margin: 100px auto;
+           position: relative;
+           overflow: hidden;
+        }
+       /*#img-box{*/
+           /*position: relative;*/
+           /*width: 400px;*/
+           /*height: 300px;*/
+       /*}*/
+       /*#img-box li{*/
+           /*position: absolute;*/
+           /*left: 0px;*/
+           /*top: 0px;*/
+           /*overflow: hidden;*/
+       /*}*/
+        #content{
+           width: 600px;
+           height: 2400px;
+        }
+        #content li{
+           position: absolute;
+       }
+       #content img{
+           width: 600px;
+           height: 400px;
+           float: left;
+           position: absolute;
+       }
+       #small-box{
+           height: 140px;
+           width: 1190px;
+           position: absolute;
+           top: 400px;
+           background: #CCCCCC;
+       }
+       #small-box img{
+           height: 120px;
+           width: 186.7px;
+           float: left;
+           margin-left: 10px;
+           margin-top: 10px;
+       }
+        #prev,#next{
+            width: 200px;
+            height: 320px;
+            position: absolute;
+            top: 0px;
+            z-index: 999999;
+        }
+        #prev{
+            width: 300px;
+            height: 400px;
+            position: absolute;
+            left: 0px;
+            z-index: 999999;
+            opacity: 0px;
+        }
+        #next{
+            width: 300px;
+            height: 400px;
+            position: absolute;
+            right: 0px;
+            opacity: 0px;
+            z-index: 999999;
+        }
+       #prev-btn,#next-btn{
+           width: 60px;
+           height: 60px;
+           position: absolute;
+           top: 50%;
+           margin-top: -30px;
+           background-image: url("images/btn.gif");
+           z-index: 9999999;
+       }
+        #prev-btn{
+            left: 10px;
+        }
+        #next-btn{
+            right: 10px;
+            background-position: 0 -60px;
+        }
+        #text{
+            height: 20px;
+            width: 600px;
+            position: absolute;
+            top: 380px;
+            color: #fff;
+            background:#000;
+            opacity: 0.5;
+            z-index: 999999;
+        }
+        #text-name{
+            position: absolute;
+            left: 0;
+        }
+        #i-num{
+            position: absolute;
+            right: 0;
+        }
+        #small-box img{
+            opacity: 0.5;
+        }
+        #small-box .selected{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="content">
+        <ul id="img-box">
+            <li><img style="z-index: 1" src="images/1.jpg" alt=""/></li>
+            <li><img src="images/2.jpg" alt="111"/></li>
+            <li><img src="images/3.jpg" alt=""/></li>
+            <li><img src="images/4.jpg" alt=""/></li>
+            <li><img src="images/5.jpg" alt=""/></li>
+            <li><img src="images/6.jpg" alt=""/></li>
+        </ul>
+    </div>
+
+    <div id="prev">
+       <span id="prev-btn"></span>
+    </div>
+
+    <div id="next">
+        <span id="next-btn"></span>
+    </div>
+
+    <div id="text">
+       <span id="text-name">hhgg</span>
+        <div id="i-num">
+            <span>1</span>/
+            <span>6</span>
+        </div>
+    </div>
+
+    <div id="small-box">
+        <ul id="small-img">
+            <li><img class="selected" src="images/1.jpg" alt=""/></li>
+            <li><img src="images/2.jpg" alt=""/></li>
+            <li><img src="images/3.jpg" alt=""/></li>
+            <li><img src="images/4.jpg" alt=""/></li>
+            <li><img src="images/5.jpg" alt=""/></li>
+            <li><img src="images/6.jpg" alt=""/></li>
+        </ul>
+    </div>
+</div>
+
+<script src="jslib.js"></script>
+<script>
+   var oPrev = document.getElementById("prev");
+   var oNext = document.getElementById("next");
+   var oContainer = document.getElementById("container");
+   var oContent = document.getElementById("content")
+   var oNum = document.getElementById("i-num");
+
+   var iNow = 0;
+   var zIndex =1;
+   var txt = aImg[iNow].getElementsByTagName("img")[0].alt;
+   oTxt.innerHTML = txt;
+   oNum.innerHTML = iNow +1;
+   oPrev.onmouseover = function (){
+        animate(this,{opacity:100})
+    }
+    oPrev.onmouseover = function (){
+        animate(this,{opacity:0})
+    }
+
+  oNext.onclick = function(){
+      iNow++;
+      if(iNow == aImg.length){
+          iNow = 0;
+      }
+      changeImg(iNow)
+  }
+
+function changeImg(idx){
+    var txt = aImg[iNow].getElementsByTagName("img")[0].alt;
+    aImg[idx].style.zIndex = ++zIndex;
+    aImg[idx].style.height = 0;
+    oTxt.innerHTML = txt;
+    oNum.innerHTML = idx +1;
+    animate(aImg[idx],{
+        height:320
+    });
+    for(var i=0;i<aSmall.length;i++){
+        aSmall[i].className = "";
+    }
+    aSmall[idx].className = "selected";
+    if[idx==0]{
+        animate(oSmallImg,{
+            left:0
+        });
+    }else if(idx ==aSmall.length - 1){
+        animate(oSmallImg,{
+            left:-(idx-2)*(aSmall[0].offsetWidth+10)
+        });
+    }else{
+        animate(oSmallImg,{
+            left:-(idx-1)*(aSmall[0].offsetWidth+10)
+        })
+    }
+}
+
+for(var i=0;i<aSmall.length;i++){
+    aSmall[i].index =  i;
+    aSmall[i].onmouseover = function(){
+        if(this.index!=iNow){
+            this.className = "";
+        }
+    }
+    aSmall[i].onclick = function(){
+        iNow = this.index;
+    }
+}
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
