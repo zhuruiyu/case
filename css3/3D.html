@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: black;
+            -webkit-perspective: 800px;
+        }
+        #container{
+            width: 400px;
+            height: 320px;
+            position: relative;
+            margin: 150px auto;
+            -webkit-transform-style: preserve-3d;
+            -webkit-animation: rotateCube 4s linear infinite;
+        }
+
+        @-webkit-keyframes rotateCube{
+            from{
+
+            }
+            to{
+                -webkit-transform: rotateY(-360deg);
+            }
+        }
+
+        .cube{
+            width: 100%;
+            height: 100%;
+            background: rgba(255,255,255,0.6);
+            text-align: center;
+            /*font-size: 40px;*/
+            line-height: 400px;
+            border-radius: 10px;
+            position: absolute;
+        }
+
+        .four{
+            -webkit-transform: rotateY(180deg) translateZ(200px);
+
+        }
+        .one{
+            -webkit-transform: rotateX(90deg) translateZ(200px);
+
+        }
+
+        .five{
+            -webkit-transform: rotateY(-90deg) translateZ(200px);
+
+        }
+        .six{
+            -webkit-transform: rotateX(-90deg) translateZ(200px);
+
+        }
+        .three{
+            -webkit-transform: rotateY(90deg) translateZ(200px);
+
+        }
+        .two{
+            -webkit-transform: translateZ(200px);
+        }
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <div class="cube one">1</div>
+    <div class="cube two"><img src="img/1.jpg" alt=""/></div>
+    <div class="cube three"><img src="img/3.jpg" alt=""/></div>
+    <div class="cube four"><img src="img/4.jpg" alt=""/></div>
+    <div class="cube five"><img src="img/5.jpg" alt=""/></div>
+    <div class="cube six">6</div>
+</div>
+</body>
+</html>
