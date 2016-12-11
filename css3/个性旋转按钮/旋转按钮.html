@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #container{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+        #container img{
+
+            position: absolute;
+            left: 0;
+            top: 0;
+            -webkit-transition: all 1s ease;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <img src="img/close.png" alt=""/>
+    <img src="img/full.png" alt=""/>
+    <img src="img/open.png" alt=""/>
+    <img src="img/prev.png" alt=""/>
+    <img src="img/refresh.png" alt=""/>
+    <img id="home" src="img/home.png" alt=""/>
+</div>
+<script>
+    var oHome = document.getElementById('home');
+    var aImg = document.getElementsByTagName('img');
+    var bFlag = true;
+    oHome.onclick = function() {
+        if (bFlag) {
+            for (var i = 0; i < aImg.length - 1; i++) {
+                var x = -170 * Math.sin(i * 22.5 * Math.PI / 180);      //?
+                var y = -170 * Math.cos(i * 22.5 * Math.PI / 180);
+                aImg[i].style.webkitTransform = 'translate(' + x + 'px,' + y + 'px) rotate(-360deg)';
+            }
+            this.style.WebkitTransform = 'rotate(-360deg)';
+        }
+        else {
+            for (var i = 0; i < aImg.length - 1; i++) {
+                aImg[i].style.webkitTransform = 'translate(0px,0px) rotate(0deg)'
+            }
+            this.style.WebkitTransform = 'rotate(0deg)';
+        }
+        bFlag = !bFlag;
+    }
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!--//没加过渡看不清动画  transition-->
+<!--//transitionDelay-->
