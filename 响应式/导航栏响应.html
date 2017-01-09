@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        ul{
+            list-style: none;
+
+        }
+        a{
+            width: 100px;
+            height: 30px;
+            text-decoration: none;
+            line-height : 30px;
+            display: block;
+        }
+        #ul{
+            width: 420px;
+            height:30px;
+        }
+        #ul li{
+            width: 100px;
+            height: 30px;
+            float: left;
+            background: #eeeeee;
+            margin-right: 5px;
+            text-align: center;
+        }
+        #iphone li{
+            width: 100px;
+            height: 30px;
+            background: #eeeeee;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        #iphone{
+            display: none;
+        }
+
+        @media screen and (max-width: 767px){
+            #iphone{
+                display: block;
+            }
+            #ul{
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<ul id="iphone">
+    <li><a href="">Link 1</a></li>
+    <li><a href="">Link 2</a></li>
+    <li><a href="">Link 3</a></li>
+    <li><a href="">Link 4</a></li>
+</ul>
+<ul id="ul">
+    <li><a href="">Link 1</a></li>
+    <li><a href="">Link 2</a></li>
+    <li><a href="">Link 3</a></li>
+    <li><a href="">Link 4</a></li>
+
+</ul>
+</body>
+</html>
+

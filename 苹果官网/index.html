@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <style>
+        *{
+              padding: 0px;
+              margin: 0px;
+          }
+        ul{
+            list-style: none;
+
+        }
+        a{
+            text-decoration: none;
+        }
+        #adv{
+            background: #444444;
+            color: #a8a8aa;
+            line-height: 40px;
+            position: relative;
+        }
+        .m{
+            padding: 0 22px;
+            max-width: 980px;
+            line-height: 48px;
+            margin: 0 auto;
+        }
+        #nav{
+            height: 44px;
+            background: #000;
+        }
+        #nav-ul,#nav-phone{
+            display: -webkit-box;
+            -webkit-box-pack: justify;
+            -ms-box-pack:justify;
+            box-pack:justify;
+
+        }
+
+          #nav-phone{
+           display: none;
+       }
+
+        #nav li a{
+            display: inline-block;
+            height: 44px;
+            line-height: 44px;
+            padding: 0 10px;
+            color: #fff;
+            /*background: #fff;*/
+
+        }
+        #nav .logo{
+            background: url("img/apple_logo.svg") no-repeat;
+        }
+          #nav .search{
+              background: url("img/search.svg") no-repeat;
+          }
+          #nav .bag{
+              background: url("img/bag.svg") no-repeat;
+          }
+        
+        @media screen and (max-width: 767px){
+            #nav-phone{
+                display:-webkit-box;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<div id="adv">
+    <div class="m"> 广告</div>
+
+</div>
+<nav id="nav">
+    <ul id="nav-phone">
+        <li class=""><a href=""></a></li>
+        <li class="logo"><a href=""></a></li>
+        <li class="bag"><a href=""></a></li>
+    </ul>
+    <ul id="nav-ul" class="m">
+        <li><a href="#" class="logo"></a></li>
+        <li><a href="">Mac</a></li>
+        <li><a href="">iPad</a></li>
+        <li><a href="">iPhone</a></li>
+        <li><a href="">watch</a></li>
+        <li><a href="">Music</a></li>
+        <li><a href="">技术支持</a></li>
+        <li><a href="#" class="search"></a></li>
+        <li><a href="#" class="bag"></a></li>
+    </ul>
+</nav>
+</body>
+</html>
