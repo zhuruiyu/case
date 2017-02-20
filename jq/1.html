@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <p class="p1">111111</p>
+    <div id="p2">
+        <p class="p1">22222</p>
+        <p id="p4">444444</p>
+    </div>
+    <p id="p3">333333</p>
+    <div class="p1" id="aa">
+        aaaaaa
+    </div>
+    <div class="p2"  id="bb">
+        bbbbbb
+        <p>cccccccc</p>
+    </div>
+<script src="jquery-1.12.4.js"></script>
+    <script>
+//        $('#p2').css('background','red');
+//        $('.p2').css('background','blue');
+         $('#p2>#p4').css('background','blue');
+    </script>
+</body>
+</html>

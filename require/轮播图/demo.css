@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+#container {
+    width: 680px;
+    height: 344px;
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+
+#tab{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+}
+#tab li{
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: black;
+    color: white;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#arrow{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+#arrow span{
+    width: 20px;
+    height:20px;
+    float: left;
+    background: #000;
+    color:#fff;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#content{
+    width: 2800px;
+    position: absolute;
+    left: 0px;
+}
+
+#content img{
+    float: left;
+}

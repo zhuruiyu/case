@@ -6,11 +6,12 @@
 //        jquery: 'jquery-1.12.4'
 //    }
 //});
+
 require(['jquery','dialog'],function($,Dialog){
     $('#btn').on('click',function(){
         Dialog.open({
             width:500,
-            title:"µÇÂ¼",
+            title:"ç™»å½•",
             url:'login.html'
         });
     });
