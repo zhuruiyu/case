@@ -1,0 +1,35 @@
+.wraper{
+    position: relative;
+    width: 1003px;
+    height: 120px;
+    /*background: #ccc;*/
+    margin: 0 auto;
+}
+
+.wraper img{
+    position: absolute;
+    top: 37px;
+    left: 0px;
+}
+
+.wraper ul{
+    position: absolute;
+    /*display: block;*/
+    list-style: none;
+    float: left;
+    top: 37px;
+    left: 353px;
+}
+
+.wraper ul li {
+    float: left;
+    margin-right: 5px;
+}
+
+.wraper input{
+    position: absolute;
+    width: 131px;
+    height: 30px;
+    top: 45px;
+    right: 0px;
+}

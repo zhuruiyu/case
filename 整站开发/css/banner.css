@@ -1,0 +1,31 @@
+.banner{
+    position: relative;
+    margin: 0 auto;
+    width: 1003px;
+    height: 460px;
+    background: #31333e;
+
+}
+.banner .prev{
+    position: absolute;
+    top: 205px;
+}
+.banner .next{
+    position: absolute;
+    top: 205px;
+    right: 0px;
+}
+
+.banner .word{
+    position: absolute;
+    top: 47px;
+    left: 149px;
+}
+
+.banner .iphone{
+    position: absolute;
+    top:114px;
+    left:236px;
+}
+
+

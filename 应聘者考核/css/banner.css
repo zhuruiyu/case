@@ -1,0 +1,37 @@
+.banner {
+    position: relative;
+    float: left;
+    width: 1278px;
+    height: 58px;
+    background: #2189bf;
+    left: 0px;
+
+}
+.banner .logo{
+    position: absolute;
+    left: 41px;
+    top: 10px;
+}
+.banner input{
+    position: absolute;
+    width: 310px;
+    height: 28px;
+    float: right;
+    top: 14px;
+    right: 156px;
+}
+.banner input{
+    position: absolute;
+    width: 310px;
+    height: 28px;
+    float: right;
+    top: 14px;
+    right: 156px;
+}
+.banner .login{
+    position: absolute;
+    top: 20px;
+    right: 120px;
+}
+
+

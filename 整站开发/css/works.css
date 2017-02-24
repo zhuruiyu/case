@@ -1,0 +1,14 @@
+.works{
+    position: relative;
+    margin: 0 auto;
+    width: 1003px;
+    height: 500px;
+    /*background: blue;*/
+
+}
+
+.works .imgs{
+    position: absolute;
+    top: 70px;
+    left: 0px;
+}

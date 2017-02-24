@@ -1,0 +1,24 @@
+.news{
+    position: relative;
+    margin: 0 auto;
+    width: 1003px;
+    height: 492px;
+    /*background: #ccc;*/
+
+}
+
+.news .pen{
+    position: absolute;
+    top: 117px;
+    left: 149px;
+}
+.news .url{
+    position: absolute;
+    top: 138px;
+    left: 451px;
+}
+.news .phone{
+    position: absolute;
+    top: 138px;
+    right: 118px;
+}
