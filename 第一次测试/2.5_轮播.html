@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+
+        #container{
+            width: 400px;
+            height:420px;
+            margin:100px auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #content{
+            width: 2720px;
+            position: absolute;
+            left:0;
+        }
+
+        #content img{
+            float: left;
+        }
+
+        #control{
+            width: 1200px;
+            height: 90px;
+        }
+        #tab{
+            position: absolute;
+            right:10px;
+            bottom:10px;
+        }
+        #tab li{
+            float: left;
+            width: 92px;
+            height:90px;
+            background: #000;
+            color:#fff;
+            cursor: pointer ;
+            margin-right: 5px;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        #tab li.selected{
+            background: orange;
+        }
+        #tab li.img{
+            width: 92px;
+            height:90px;
+
+        }
+       #next{
+           position: absolute;
+           left:330px;
+           bottom:230px;
+   }
+     #prev{
+         position: absolute;
+         left:10px;
+         bottom:170px;
+
+     }
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="content">
+        <img src="images/1.jpg" title="pic"/>
+        <img src="images/2.jpg"/>
+        <img src="images/3.jpg"/>
+        <img src="images/4.jpg"/>
+        <img src="images/5.jpg"/>
+        <img src="images/6.jpg"/>
+
+    </div>
+   <div id="control">
+       <ul id="tab">
+           <li class="selected"><img src="images/1.jpg" alt=""/></li>
+           <li><img src="images/2.jpg" alt=""/></li>
+           <li><img src="images/3.jpg" alt=""/></li>
+           <li><img src="images/4.jpg" alt=""/></li>
+       </ul>
+   </div>
+    <div id="arrow">
+        <span id="prev"><img src="images/btn.gif" alt=""/></span>
+        <span id="next"><img src="images/btn.gif" alt=""/></span>
+    </div>
+</div>
+<script src="../案例/jslib.js"></script>
+<script>
+
+    var oContainer = document.getElementById('container');
+    var oContent = document.getElementById('content');
+    var aLi = oContainer.getElementsByTagName('li');
+    var aImg = oContainer.getElementsByTagName('img');
+    var oNext = document.getElementById('next');
+    var oPrev = document.getElementById('prev');
+    var iNow = 0;
+    oContent.style.width = (aImg.length+1)*aImg[0].offsetWidth +"px";
+    oContent.appendChild(aImg[0].cloneNode());
+
+
+    for(var i=0; i<aLi.length; i++){
+        aLi[i].index = i;
+        aLi[i].onmouseover = function(){
+            changeImg(this.index);
+            iNow = this.index;
+        }
+    }
+
+    function changeImg(index){
+        for(var i=0; i<aLi.length; i++){
+            aLi[i].className = '';
+        }
+        aLi[index == aLi.length ? 0 :index].className = 'selected';
+        animate(oContent,{left:-aImg[0].offsetWidth*index});
+
+    }
+
+    oNext.onclick = function(){
+        iNow++;
+        if(iNow == aLi.length +1){
+            oContent.style.left = 0;
+            iNow = 1;
+        }
+        changeImg(iNow);
+    }
+
+    oPrev.onclick = function(){
+        iNow--;
+        if(iNow == -1){
+            oContent.style.left = -aLi.length * aImg[0].offsetWidth +'px';
+            iNow = 3;
+        }
+        changeImg(iNow);
+    }
+
+
+
+</script>
+
+</body>
+</html>

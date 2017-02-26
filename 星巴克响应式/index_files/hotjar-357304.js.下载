@@ -1,0 +1,37 @@
+window.hjSiteSettings = window.hjSiteSettings || {"testers_widgets":[],"surveys":[],"record_targeting_rules":[{"negate":false,"pattern":"https:\/\/www.starbucks.com.cn\/cn\/help\/faq\/","match_operation":"starts_with","component":"url"},{"negate":false,"pattern":"https:\/\/www.starbucks.com.cn\/cn\/account\/","match_operation":"starts_with","component":"url"},{"negate":false,"pattern":"https:\/\/www.starbucks.com.cn\/cn\/create-account","match_operation":"simple","component":"url"},{"negate":false,"pattern":"https:\/\/www.starbucks.com.cn\/cn\/login","match_operation":"simple","component":"url"},{"negate":false,"pattern":"https:\/\/www.starbucks.com.cn\/","match_operation":"simple","component":"url"},{"negate":false,"pattern":"https:\/\/www.starbucks.com.cn\/cn\/the-starbucks-china-app","match_operation":"simple","component":"url"},{"negate":false,"pattern":"https:\/\/www.starbucks.com.cn\/cn\/new-at-starbucks\/cny2017","match_operation":"simple","component":"url"},{"negate":false,"pattern":"https:\/\/www.starbucks.com.cn\/cn\/starbucks-gift-card","match_operation":"simple","component":"url"},{"negate":false,"pattern":"https:\/\/www.starbucks.com.cn\/cn\/rewards","match_operation":"simple","component":"url"}],"recording_capture_keystrokes":true,"polls":[{"persist_condition":"once","targeting":[{"negate":false,"pattern":"desktop","match_operation":"exact","component":"device"},{"negate":false,"pattern":"tablet","match_operation":"exact","component":"device"},{"negate":false,"pattern":"phone","match_operation":"exact","component":"device"},{"negate":false,"pattern":"https:\/\/www.starbucks.com.cn\/","match_operation":"exact","component":"url"},{"negate":false,"pattern":"https:\/\/www.starbucks.com.cn\/cn\/account","match_operation":"exact","component":"url"},{"negate":false,"pattern":"https:\/\/www.starbucks.com.cn\/cn\/the-starbucks-china-app","match_operation":"exact","component":"url"},{"negate":false,"pattern":"https:\/\/www.starbucks.com.cn\/cn\/mobile-variant","match_operation":"starts_with","component":"url"}],"language":"zh_TW","created_epoch_time":1483520625,"targeting_percentage":50,"display_condition":"delay","content":{"thankyou":"\u611f\u8c22\u60a8\u7684\u53cd\u9988\uff01\u60a8\u7684\u610f\u89c1\u5bf9\u6211\u4eec\u975e\u5e38\u91cd\u8981\u3002","questions":[{"nextByAnswer":[],"text":"\u4eb2\u7231\u7684\u987e\u5ba2,\u4eca\u5929\u8bbf\u95ee\u6211\u4eec\u5b98\u7f51\u7684\u7406\u7531\u662f\u4ec0\u4e48?","labels":null,"answers":null,"next":"byOrder","type":"single-open-ended-multiple-line","randomize_answer_order":false}]},"effective_show_branding":false,"background":"#f6f6f6","skin":"light","position":"right","display_delay":10,"id":115180}],"site_id":357304,"forms":[],"record":false,"heatmaps":[{"created_epoch_time":1483446650,"targeting":[{"negate":false,"pattern":"https:\/\/www.starbucks.com.cn\/cn\/starbucks-gift-card","match_operation":"simple","component":"url"}],"id":1029556,"selector_version":2},{"created_epoch_time":1483446200,"targeting":[{"negate":false,"pattern":"https:\/\/www.starbucks.com.cn\/cn\/help\/faq\/","match_operation":"starts_with","component":"url"}],"id":1029514,"selector_version":2},{"created_epoch_time":1483446018,"targeting":[{"negate":false,"pattern":"https:\/\/www.starbucks.com.cn\/cn\/the-starbucks-china-app","match_operation":"simple","component":"url"}],"id":1029502,"selector_version":2}],"deferred_page_contents":[{"targeting":[{"negate":false,"pattern":"https:\/\/dev-statamic-staging-sbux.wiredcraft.net\/en","match_operation":"simple","component":"url"},{"negate":false,"pattern":"tablet","match_operation":"exact","component":"device"}],"id":2847900},{"targeting":[{"negate":false,"pattern":"https:\/\/dev-statamic-staging-sbux.wiredcraft.net\/en\/new-at-starbucks\/christmas-201601","match_operation":"simple","component":"url"},{"negate":false,"pattern":"tablet","match_operation":"exact","component":"device"}],"id":2842599},{"targeting":[{"negate":false,"pattern":"https:\/\/dev-statamic-staging-sbux.wiredcraft.net\/en\/the-starbucks-china-app","match_operation":"simple","component":"url"},{"negate":false,"pattern":"tablet","match_operation":"exact","component":"device"}],"id":2842596},{"targeting":[{"negate":false,"pattern":"https:\/\/dev-statamic-staging-sbux.wiredcraft.net\/en","match_operation":"simple","component":"url"},{"negate":false,"pattern":"tablet","match_operation":"exact","component":"device"}],"id":2842578}],"feedback_widgets":[],"r":0.0596550628,"state_change_listen_mode":"manual"};
+
+window.hjBootstrap = window.hjBootstrap || function (scriptUrl) {
+    var s = function () {}, h, v;
+
+    if (!document.addEventListener) {
+        return;
+    }
+
+    h = document.createElement('script');
+    h.src = scriptUrl;
+    document.getElementsByTagName('head')[0].appendChild(h);
+
+    v = document.createElement('iframe');
+    v.style.cssText = 'position: fixed !important; top: -100px !important; left: -100px !important; width: 1px !important; height: 1px !important;';
+    v.id = '_hjRemoteVarsFrame';
+    v.src = 'https://' + (window._hjSettings.varsHost || 'vars.hotjar.com') + '/rcj-2e6153f931e5c8a79f89c0c503e3c25e.html';
+    v.onload = function () {
+        s.varsLoaded = true;
+        if ((typeof hj != 'undefined') && hj.event) {
+            hj.event.signal('varsLoaded');
+        }
+    };
+    s.varsJar = v;
+
+    if (document.body) {
+        document.body.appendChild(v);
+    } else {
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.appendChild(v);
+        });
+    }
+    window.hjBootstrap = s;
+};
+
+
+hjBootstrap('https://script.hotjar.com/modules-ec12ee2ed1767aa1ebc8d90166f1c7c4.js');
