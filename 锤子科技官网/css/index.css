@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    display: block;
+}
+div{
+    display: block;
+}
+.header-main{
+    width: 1349px;
+    height: 100px;
+    background: black;
+}
+.container{
+    overflow: hidden;
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+
+}
+.header-main .logo{
+    float: left;
+    padding: 25px 0 0 0;
+}
+.header-main .logo a{
+    float: left;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url(../imgs/logo_d4aa5fa65d.png);
+    /*background-size: 50px;*/
+}
+.container .nav{
+    /*float: right;*/
+}
+.container .nav-main{
+
+    margin-top: 36px;
+}
+.container .nav a{
+    display: block;
+    font-size: 14px;
+    height: 28px;
+    padding: 0 20px;
+    /*margin: 20px;*/
+    float: right;
+    color: #fff;
+    opacity: .6;
+}
+
+.main .sub-nav{
+    position: absolute;
+}
+.main .sub-nav .sub-nav-fix{
+   width: 1349px;
+    height: 90px;
+    background: red;
+}
+
+.main .sub-nav .sub-nav-fix .sub-nav-fix-ul{
+    position: relative;
+    padding: 37px 0 0 0;
+}
+.main .sub-nav .sub-nav-fix li{
+    padding-left: 42px;
+    float: left;
+    font-size: 14px;
+}
+
+.main .view{
+    width: 1349px;
+    height: 4394px;
+    background: blue;
+}
+.main .view .banner-3d{
+    margin: 0 auto;
+}
+.main .view .banner-3d .banner-3d-mask a{
+    width: 1225px;
+    height: 500px;
+    background: url("../imgs/kill-banner_4778a5246b.png");
+}
+
+
+
+
+
+
+
+
+
+
+.footer .bottom-container{
+    width: 1220px;
+    margin: auto;
+}
+.footer .bottom-container .siteinfo{
+    height: 233px;
+    background: yellow;
+}
+
+.footer .bottom-container .copyright{
+    height: 117px;
+    background: red;
+}
