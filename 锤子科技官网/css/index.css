@@ -55,12 +55,12 @@ div{
 }
 
 .main .sub-nav{
-    position: absolute;
+    /*position: absolute;*/
 }
 .main .sub-nav .sub-nav-fix{
    width: 1349px;
     height: 90px;
-    background: red;
+    /*background: red;*/
 }
 
 .main .sub-nav .sub-nav-fix .sub-nav-fix-ul{
@@ -73,20 +73,55 @@ div{
     font-size: 14px;
 }
 
-.main .view{
+.main .page{
+    position: relative;
+    margin: 0 auto;
     width: 1349px;
     height: 4394px;
     background: blue;
 }
-.main .view .banner-3d{
-    margin: 0 auto;
-}
-.main .view .banner-3d .banner-3d-mask a{
+/*.main .view .banner-3d{*/
+    /*margin: 0 auto;*/
+/*}*/
+.main .view .banner-3d .banner-3d-mask .carousel{
+    /*position: relative;*/
     width: 1225px;
     height: 500px;
-    background: url("../imgs/kill-banner_4778a5246b.png");
+    margin: 0 auto;
+}
+.main .page .box{
+    width: 1190px;
+}
+.main .page .activity li{
+    width: 25%;
+    /*height: 200px;*/
+    /*position: relative;*/
+    float: left;
+    text-align: center;
 }
 
+.main .page .hot .hot-wrapper li{
+    width: 25%;
+float: left;
+text-align: center;
+    /*position: relative;*/
+
+}
+.main .page .floor li{
+    /*width: 25%;*/
+    float: left;
+    text-align: center;
+    /*position: relative;*/
+
+}
+
+.main .page .technology li{
+    width: 25%;
+    /*height: 200px;*/
+    /*position: relative;*/
+    float: left;
+    text-align: center;
+}
 
 
 
@@ -97,12 +132,31 @@ div{
 
 
 .footer .bottom-container{
+    /*position: absolute;*/
     width: 1220px;
     margin: auto;
 }
 .footer .bottom-container .siteinfo{
+    position: relative;
+    padding: 100px 0 32px;
     height: 233px;
     background: yellow;
+}
+
+.footer .bottom-container .siteinfo .footer-banner .main-menu{
+    width: 149px;
+    height: 24px;
+    /*background: purple;*/
+    float: left;
+}
+.footer .bottom-container .siteinfo .footer-banner .main-menu li{
+    font-size: 12px;
+}
+.footer .bottom-container .siteinfo .footer-banner h3{
+    font-size: 12px;
+}
+.footer .bottom-container .siteinfo .service{
+    float: right;
 }
 
 .footer .bottom-container .copyright{
