@@ -1,0 +1,24 @@
+.div1{
+    float: left;
+    background: red;
+    width: 1018px;
+    height: 31px;
+}
+
+.div2{
+    /*float: left;*/
+    float: bottom;
+    width:1018px;
+    height:1179px;
+    background: blue;
+    overflow: hidden;
+}
+
+.div2 .search{
+  position: relative;
+    width: 893px;
+    height: 85px;
+    background: #ccc;
+    left: 59px;
+    top: 19px;
+}

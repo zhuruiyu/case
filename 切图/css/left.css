@@ -1,0 +1,15 @@
+.left{
+    position: relative;
+    float: left;
+    width: 260px;
+    height: 1210px;
+    background: #2a2e3d;
+}
+
+.left img{
+    position: absolute;
+    left: 45px;
+    top: 18px;
+}
+
+
