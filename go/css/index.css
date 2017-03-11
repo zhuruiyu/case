@@ -174,7 +174,7 @@ header {
     min-width: 1024px;
     height: 80px;
     padding: 10px 0 0;
-    background: #ffcf05 url(http://www.songchao3.com/imgs/top_bg.png) left bottom repeat-x
+    background: #ffcf05 url('./imgs/logo.png.png') left bottom repeat-x
 }
 
 header .logo {
@@ -182,7 +182,7 @@ header .logo {
     width: 136px;
     height: 57px;
     margin: 0 auto;
-    background: url(http://www.songchao3.com/imgs/logo.png) left top no-repeat;
+    background: url('./imgs/logo.png.png') left top no-repeat;
     text-indent: -99999px
 }
 
@@ -280,9 +280,9 @@ body.s1024 .img_print_blue {
     background-image: url(http://www.songchao3.com/imgs/print_blue_1024.png)
 }
 
-body.s1024 .img_person {
-    background-image: url(http://www.songchao3.com/imgs/person_1024.png)
-}
+/*body.s1024 .img_person {*/
+    /*background-image: url(http://www.songchao3.com/imgs/person_1024.png)*/
+/*}*/
 
 body.s1024 .img_print_yellow {
     background-image: url(http://www.songchao3.com/imgs/print_yellow_1024.png)
@@ -321,9 +321,9 @@ body.s1440 .img_print_blue {
     background-image: url(http://www.songchao3.com/imgs/print_blue_1440.png)
 }
 
-body.s1440 .img_person {
-    background-image: url(http://www.songchao3.com/imgs/person_1440.png)
-}
+/*body.s1440 .img_person {*/
+    /*background-image: url(http://www.songchao3.com/imgs/person_1440.png)*/
+/*}*/
 
 body.s1440 .img_print_yellow {
     background-image: url(http://www.songchao3.com/imgs/print_yellow_1440.png)
@@ -336,6 +336,7 @@ body.s1440 .img_skills {
 body.s1440 .img_ink_dots_far {
     background-image: url(http://www.songchao3.com/imgs/ink_dots_far_1440.png)
 }
+
 
 body.s1440 .img_ink_dots_close {
     background-image: url(http://www.songchao3.com/imgs/ink_dots_close_1440.png)
@@ -362,9 +363,9 @@ body.s1920 .img_print_blue {
     background-image: url(http://www.songchao3.com/imgs/print_blue_1920.png)
 }
 
-body.s1920 .img_person {
-    background-image: url(http://www.songchao3.com/imgs/person_1920.png)
-}
+/*body.s1920 .img_person {*/
+    /*background-image: url(http://www.songchao3.com/imgs/person_1920.png)*/
+/*}*/
 
 body.s1920 .img_print_yellow {
     background-image: url(http://www.songchao3.com/imgs/print_yellow_1920.png)
