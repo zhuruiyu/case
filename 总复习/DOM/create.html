@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+    <ul id="test">
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+    <script>
+        var oLi=document.createElement("li");      //创建一个li节点
+        var textnode=document.createTextNode("Water");   //创建一个文本节点内容
+        oLi.appendChild(textnode);                 //将文本节点内容，添加到li节点里面
+        document.getElementById("test").appendChild(oLi);   //将li节点，添加到test几点下面
+    </script>
+
+
+
+    <div id="div1">
+        <p1>school</p1>
+        <p2>room</p2>
+    </div>
+
+    <script>
+        var oP = document.createElement('p');
+        var text = document.createTextNode('student');
+        oP.appendChild(text);
+        document.getElementById('div1').appendChild(oP);
+    </script>
+</body>
+</html>
