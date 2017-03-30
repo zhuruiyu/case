@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+#wrap{
+    /*width: 1600px;*/
+    width: 100%;
+    margin: 0 auto;
+}
+/*----------nav----------*/
+#nav{
+    width: 1170px;
+    height: 58px;
+    margin: 0 auto;
+    /*background: #fff;*/
+}
+#logo{
+    height: 58px;
+    line-height: 58px;
+    float: left;
+}
+#logo a{
+    font-size: 18px;
+    color: #2b4056;
+}
+#nav ul{
+    height: 58px;
+    line-height: 58px;
+    float: right;
+}
+#nav ul li{
+    margin-left: 50px;
+    float: left;
+}
+#nav ul li a{
+    font-size: 14px;
+    color: #2b4056;
+}
+#nav ul li a:hover{
+    color: #00aeff;
+}
+
+#footer{
+    /*width: 1600px;*/
+    /*float: none;*/
+    clear: left;
+    width: 100%;
+    height: 170px;
+    display: block;
+    background: #152636;
+    margin: 0 auto;
+}
+
+#footer .footer-content{
+    width: 1170px;
+    height: 170px;
+    margin: 0 auto;
+    color: #fff;
+}
+#footer .logo{
+    font-size: 32px;
+    margin: 0 70px;
+    float: left;
+    line-height: 170px;
+}
+#footer .logo a{
+    color: #fff;
+}
+#footer .line{
+    width: 1px;
+    height: 90px;
+    background: #fff;
+    float: left;
+    margin: 40px 15px;
+}
+#footer ul{
+    float: left;
+    margin-top: 34px;
+}
+#footer ul a{
+    line-height: 25px;
+    color: #fff;
+}
+#footer ul a:hover{
+    color: #ccc;
+}
+#footer p{
+    float: right;
+    line-height: 170px;
+}
+#footer .scan{
+    width: 112px;
+    height: 112px;
+    background: #fff;
+    float: right;
+    margin: 24px 56px 0;
+}

@@ -1,0 +1,163 @@
+body{
+    background: #eff3f5;
+}
+#nav-width{
+    width: 100%;
+    height: 58px;
+    border-bottom: 1px solid #dde2e6;
+    background: #fff;
+}
+#container{
+    width: 1170px;
+    margin: 0 auto;
+}
+#side-bar{
+    width: 370px;
+    height: 454px;
+    background: #fff;
+    margin: 24px 0;
+    float: left;
+}
+#side-bar .menu{
+    margin-top: 33px;
+    padding: 0 auto;
+    float: right;
+
+}
+#side-bar .menu .my-collect img{
+    margin-left: -26px;
+}
+#side-bar .menu .notice-inform img{
+    margin-left: -52px;
+}
+#side-bar .menu .my-command img{
+    margin-left: -78px;
+}
+#side-bar .menu .person-information img{
+    margin-left: -104px;
+}
+#side-bar .menu .psw-manage img{
+    margin-left: -130px;
+}
+#side-bar .menu li{
+    display: block;
+    /*float: none;*/
+    height: 66px;
+    width: 270px;
+}
+#side-bar .menu a{
+    line-height: 30px;
+    float: left;
+    width: 263px;
+    background: #fff;
+}
+#side-bar .menu li:hover,#side-bar .menu li.selected{
+    background: #5ce1a8;
+}
+#side-bar .menu a:hover,#side-bar .menu li.selected a{
+    color: #5ce1a8;
+}
+#side-bar .menu p{
+    float: left;
+    line-height: 66px;
+}
+#side-bar .menu span{
+    width: 26px;
+    height: 26px;
+    overflow: hidden;
+    float: left;
+    display: block;
+    margin: 20px;
+}
+#main{
+    width: 770px;
+    float: right;
+    margin-top: 24px;
+}
+#main .sub-main{
+    height: 170px;
+    background: #fff;
+    margin-bottom: 12px;
+}
+#main .sub-main .house-img-show{
+    width: 174px;
+    height: 102px;
+    float: left;
+    margin: 20px 20px 0 29px;
+    overflow: hidden;
+}
+#main .sub-main .house-details{
+    width: 510px;
+    height: 100px;
+    margin: 20px 35px 0 0;
+    border-bottom: 1px solid #dde2e6;
+    float: right;
+}
+#main .sub-main .house-head{
+    font-size: 16px;
+    color: #39454b;
+}
+#main .sub-main .house-place{
+    font-size: 14px;
+    color: #39454b;
+}
+#main .sub-main .house-123{
+    font-size: 14px;
+    color: #39454b;
+}
+#main .sub-main .leave-time{
+    font-size: 16px;
+    color: #2eb57b;
+}
+#main .sub-main .house-order{
+    float: right;
+    margin: 9px 35px 0 0;
+}
+#main .sub-main .house-order div{
+    width: 126px;
+    height: 32px;
+    float: right;
+    margin-left: 16px;
+    border: 1px solid #dde2e6;
+    display: block;
+}
+#main .sub-main .house-order a{
+    width: 124px;
+    height: 30px;
+    border: 1px solid #5ce1a8;
+    margin: 0 auto;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+}
+#main .sub-main .house-order .delete-order{
+    color: #fff;
+    background: #5ce1a8;
+}
+#main .sub-main .house-order .change-order{
+    color: #5ce1a8;
+}
+#main .change-page{
+    height: 25px;
+    margin: 8px auto 32px;
+}
+#main .change-page ul{
+    margin-left: 184px;
+}
+#main .change-page li{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #dde2e6;
+    background-color: #fff;
+    float: left;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 5px;
+}
+#main .change-page li.more-page{
+    border: none;
+    background: none;
+}
+#main .change-page .head-page,#main .change-page .tail-page{
+    width: 60px;
+}

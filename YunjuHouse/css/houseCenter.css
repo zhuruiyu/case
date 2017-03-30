@@ -1,0 +1,212 @@
+body{
+    background: #eff3f5;
+}
+#nav-width{
+    width: 100%;
+    height: 58px;
+    border-bottom: 1px solid #dde2e6;
+    background: #fff;
+}
+#choose{
+    width: 960px;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #dde2e6;
+    border-radius: 3px;
+    margin: 19px auto;
+}
+#choose form{
+    width: 960px;
+    /*width: 162px;*/
+    height: 50px;
+    /*margin: 1px;*/
+    /*border-radius: 2px;*/
+    float: left;
+}
+#choose form select{
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    border: none;
+    border-right: 1px solid #dde2e6;
+    font-size: 16px;
+    width: 141px;
+    height: 50px;
+    padding-left: 45px;
+    background: url(../imgs/low2.png) no-repeat 90% / 10%;
+    float: left;
+}
+#choose form input{
+    height: 50px;
+    width: 380px;
+    font-size: 16px;
+    color: #999d99;
+    border: none;
+    float: left;
+    outline: none;
+    margin: 0 40px;
+}
+#choose form .search{
+    width: 215px;
+    height: 50px;
+    float: right;
+    text-align: center;
+    line-height: 50px;
+    background: #39c6a7 url(../imgs/search2.png) no-repeat 75%;
+    cursor: pointer;
+}
+#choose form .search a{
+    color: #fff;
+    font-size: 16px;
+}
+#select-type{
+    width: 1170px;
+    height: 268px;
+    margin: 0 auto;
+    border: 1px solid #dde2e6;
+    background: #fff;
+}
+#more-choose{
+    margin-top: 20px;
+    margin-left: 70px;
+}
+#more-choose ul{
+    width: 100%;
+    height: 30px;
+    margin: 7px 0;
+    float: left;
+    line-height: 30px;
+}
+#more-choose ul li{
+    float: left;
+}
+/*#more-choose ul li{*/
+    /*/!*width: 80px;*!/*/
+    /*/!*height: 30px;*!/*/
+/*}*/
+#more-choose ul li{
+    padding: 4px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    /*background: #333;*/
+}
+#more-choose ul.s li:hover{
+    border: 1px solid #39c6a7;
+    padding: 3px 19px;
+}
+#more-choose ul li.selected{
+    background: #39c6a7;
+}
+#more-choose ul li.selected a{
+    color: #fff;
+}
+#more-choose ul p.title{
+    width: 110px;
+    float: left;
+}
+#many-house{
+    width: 1170px;
+    margin: 0 auto;
+    /*float: left;*/
+    overflow: auto;
+}
+#ways{
+    height: 81px;
+    width: 100%;
+}
+#ways ul li{
+    width: 157px;
+    height: 39px;
+    float: left;
+    margin: 20px;
+    line-height: 39px;
+    text-align: center;
+}
+#ways ul li.selected{
+    background: #fff;
+    border: 1px solid #39c6a7;
+}
+#ways ul li a{
+    cursor: pointer;
+}
+/*#many-house{*/
+    /*display: block;*/
+/*}*/
+#many-house .many-house{
+    width: 1170px;
+    margin: 0 auto;
+    /*display: block;*/
+    overflow: auto;
+}
+#many-house .many-house ul{
+    display: none;
+}
+#many-house .many-house ul.selected{
+    display: block;
+}
+#many-house .many-house ul li{
+    width: 368px;
+    height: 284px;
+    float: left;
+    margin: 0 31px 15px 0;
+}
+#many-house .many-house ul li:nth-child(3n){
+    margin: 0 0 15px 0;
+}
+#many-house .many-house ul li span.img-zone{
+    width: 368px;
+    height: 225px;
+    display: block;
+    overflow: hidden;
+    background: url(../imgs/house/style1.png) no-repeat center;
+}
+#many-house .many-house ul li .house-tips{
+    width: 346px;
+    height: 38px;
+    background: #fff;
+    /*line-height: 30px;*/
+    padding: 8px 10px;
+    border: 1px solid #dde2e6;
+}
+#many-house .many-house ul li .house-tips .house-name{
+    font-size: 16px;
+    color: #213433;
+    float: left;
+}
+#many-house .many-house ul li .house-tips .house-space{
+    font-size: 14px;
+    color: #213433;
+    float: right;
+}
+#many-house .many-house ul li .house-tips .house-detail{
+    font-size: 12px;
+    color: #535858;
+    float: left;
+}
+
+/*------------------change-page--------------*/
+
+#many-house .many-house .change-page{
+    height: 25px;
+    margin: 8px auto 32px;
+}
+#many-house .many-house .change-page ul{
+    margin-left: 395px;
+}
+#many-house .many-house .change-page li{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #dde2e6;
+    background-color: #fff;
+    float: left;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 5px;
+}
+#many-house .many-house .change-page li.more-page{
+    border: none;
+    background: none;
+}
+#many-house .many-house .change-page .head-page,#many-house .many-house .change-page .tail-page{
+    width: 60px;
+}
