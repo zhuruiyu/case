@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+
+<div id="cart-box">
+    <article class="con-main">
+        <div class="co-lists" v-for="（lists,index） in cart_list">
+            <div class="cpn-num">
+                <span @click="reduceCartNum(index)"></span>
+                <input type="text" class="goods_num" readonly v-model.number="lists.buy_num">
+                <span  class="num_none"  @click="addCartNum(index)"></span>
+            </div>
+        </div>
+
+    </article>
+</div>
+
+<script src="vue.js"></script>
+<script type="text/javascript">
+    var cartbox=new Vue({
+        el:"#cart-box",
+        data:{
+            buy_num:'',
+            cart_list: [
+            ],
+        },
+        created:function(){
+            this.getGoods()
+        },
+        methods:{
+            getGoods:function(){
+                $.getJSON("{:url('/cart/getCart',)}", function(json){
+                    if(json.code == 200){
+                        cartbox.cart_list=json.data.cart_list;
+                    }else{
+
+                    }
+                });
+            },
+            addCartNum:function (index) {
+                var buy_nums=this.cart_list[index].buy_num
+                if(buy_nums>30){
+                    return false;
+                }
+                this.cart_list[index].buy_num++;
+            },
+            reduceCartNum:function(index){
+                var buy_nums=this.cart_list[index].buy_num
+                if(buy_nums <= 1){
+                    return false;
+                }
+                this.cart_list[index].buy_num--;
+            }
+
+        }
+
+    });
+</script>
+</body>
+</script>
+</html> 
