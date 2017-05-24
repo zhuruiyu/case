@@ -1,0 +1,125 @@
+img{
+    border: 0;
+}
+.page{
+    width: 200px;
+    height: 50px;
+    margin-left: 250px;
+    text-align: center;
+    line-height:50px;
+}
+#content{
+    margin-top: 30px;
+    min-height:650px;
+}
+#con{
+    margin-left: 50px;
+    width: 650px;
+    float: left;
+}
+#con-title,#con-title span a{
+    font-size: 14px;
+    color: #666;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+#con-title span{
+    margin-left: 20px;
+}
+.con-item{
+    padding: 10px 0;
+    margin-left: 20px;
+    border-bottom: 1px solid rgb(238,238,238);
+}
+.con-writer{
+    color: #999;
+    margin-left: -20px;
+}
+.item-title a{
+    color:rgb(34,85,153);
+    font-weight: 700;
+    font-size: 14px;
+    display: block;
+    width: 600px;
+}
+.writer-intro{
+    font-size: 14px;
+    color: #999;
+    font-weight: 700;
+}
+.writer-intro span{
+    margin-right: 20px;
+}
+.item-con a{
+    color:blue;
+}
+.con-reply{
+    font-size: 14px;
+    color: #999;
+    font-weight: 700;
+}
+#list{
+    width: 200px;
+    float: left;
+    margin-left: 50px;
+}
+#list >#unlogin >a{
+    display: block;
+    width: 200px;
+    text-align: center;
+    height: 120px;
+    line-height: 200px;
+    font-size: 14px;
+    color: #999;
+    font-weight: 700;
+    border-bottom: 1px solid rgb(238,238,238);
+}
+#list-login>ul>li{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    font-weight: 700;
+    line-height: 50px;
+}
+#list-login>ul>li a{
+    font-size: 14px;
+    color: #999;
+    font-weight: 700;
+}
+#list-con ul li{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    font-weight: 700;
+    line-height: 50px;
+}
+#list-con ul li a{
+    font-size: 14px;
+    color: #999;
+    font-weight: 700;
+}
+#list li:hover {
+    background: rgb(239,246,250);
+}
+#img-content{
+    width: 1000px;
+    height: 400px;
+    margin-top:50px;
+    overflow: hidden;
+}
+#img-content>div{
+    width: 200px;
+    height: 400px;
+    float:left;
+    -webkit-transition: all 1s ease-in-out;
+}
+#img-content:hover>div{
+    width: 100px;
+}
+#img-content>div:hover{
+    width: 600px;
+}

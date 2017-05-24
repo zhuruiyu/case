@@ -1,0 +1,113 @@
+body{
+    background: #eeeeee;
+}
+#article-container{
+    border-radius: 10px;
+    background: #FFFFFF;
+    padding: 10px;
+    width: 80%;
+    min-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+    box-shadow: #CCCCCC 10px 5px 10px;
+    /*margin-bottom: 50px;*/
+}
+#article-container .article-top{
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.article-top .article-title{
+    font-size: 40px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+.article-top .add_time{
+    display: block;
+    float: right;
+    height: 20px;
+    margin-right: 100px;
+}
+#article-container .article-show-img{
+    position: relative;
+    width: 90%;
+    /*min-width: 500px;*/
+    margin: 20px auto;
+    height: 500px;
+    overflow: hidden;
+    padding: 10px 15px;
+}
+#article-container .copy{
+    width: 150px;
+    float: right;
+    margin: 10px 10px 20px 0;
+}
+.article-show-img img{
+    position: absolute;
+    display: block;
+    width: 100%;
+}
+.article-content{
+    font-size: 20px;
+    width: 800px;
+    margin: 0 auto;
+    text-indent: 40px;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+}
+.article-content p{
+    padding-left: 20px;
+}
+.panel{
+    width: 400px;
+    height: 10px;
+    background: #9ccff4;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left: -200px;
+    opacity: 0.7;
+}
+.footer-nav{
+    height: 70px;
+    width: 800px;
+    position: fixed;
+    opacity: 0.8;
+    bottom: -80px;
+    border-radius: 5px;
+    left: 50%;
+    margin-left: -400px;
+}
+.footer-nav span a{
+    display: block;
+}
+.footer-nav span{
+    line-height: 70px;
+    text-align: center;
+    background: #dddddd;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.footer-nav .last{
+    float: left;
+    font-size: 40px;
+    height: 70px;
+    width: 70px;
+    margin-right: 295px;
+}
+.footer-nav .top{
+    float: left;
+    font-size: 40px;
+    height: 70px;
+    width: 70px;
+    margin-right: 295px;
+}
+.footer-nav .next{
+    float: left;
+    font-size: 40px;
+    height: 70px;
+    width: 70px;
+}

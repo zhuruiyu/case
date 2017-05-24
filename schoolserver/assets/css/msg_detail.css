@@ -1,0 +1,50 @@
+#msg-content{
+
+    width: 800px;
+    margin: 70px auto 0;
+}
+#msg-content .sender{
+    padding: 5px 10px;
+    border-radius: 15px;
+    background: #ccc;
+    font-size: 20px;
+}
+#msg-content .msg-content{
+    font-size: 18px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+#post-msg{
+    margin: 50px auto 0px;
+    position: relative;
+    height: 40px;
+    width: auto;
+}
+#post-msg .content{
+    text-indent: 20px;
+    position: absolute;
+    font-size: 18px;
+    height: 40px;
+    width: 650px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    outline: none;
+    left: 10px;
+    top:0;
+}
+#post-msg .sub-btn{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 40px;
+    width: 50px;
+    background: #3e7ac2;
+    border: 0;
+    outline: none;
+    top:0;
+    right:50px;
+    color: white;
+    font-size: 14px;
+
+}

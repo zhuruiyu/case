@@ -1,0 +1,74 @@
+/*公共样式*/
+/*like*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*header导航栏*/
+header{
+    width: 100%;
+    height: 50px;
+    /*background: rgb(255, 204, 0);*/
+    background: #3266cc;
+}
+#title{
+
+}
+.warper{
+    width: 1200px;
+    margin: 0 auto;
+}
+#header-content{
+    height: 50px;
+}
+#header-content li,#header-content li a{
+    float:left;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    color:#FFFFFF;
+    /*font-weight: bolder;*/
+    /*background: rgb(255, 204, 0);*/
+    overflow: hidden;
+    position: relative;
+}
+#header-content li a img{
+    top:50%;
+    margin-top: -15px;
+    left: 20px;
+    position: absolute;
+    height: 30px;
+}
+#header-content li a:hover{
+     color: #4F5155;
+ }
+/*footer*/
+#footer{
+    clear: both;
+    margin-bottom: 0;
+    height: 80px;
+    background: #707070;
+}
+#footer-left{
+    float: left;
+}
+#footer-right{
+    width: 1000px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 80px;
+}

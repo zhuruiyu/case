@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    overflow: hidden;
+    font-size: 14px;
+    background: url("../client/src/assets/img/login.jpg") center no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+#title{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+#login-box{
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    right:100px;
+    top:50%;
+    margin-top: -100px;
+    border: 1px solid;
+}
+#login-box div{
+    position: absolute;
+    left: 10px;
+    top:40px;
+}
+#login-box div input{
+    height: 25px;
+    width: 200px;
+    margin-left: 10px;
+}
+/*#login-box div:nth-child(1){*/
+    /*top:20px;*/
+/*}*/
+/*#login-box div:nth-child(2){*/
+    /*top:50px;*/
+/*}*/
+#login-box div:nth-child(2){
+    margin-top: 50px;
+}
+#login-box div:nth-child(2) input{
+    margin-left: 24px;
+}
+#login-box input[type='submit'],#login-box input[type='reset']{
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    margin-left: 70px;
+    color: #fff;
+}
+#login-box input[type='submit']{
+    background: #365d41;
+
+}
+#login-box input[type='reset']{
+    background: #5d1014;
+    margin-left: 200px;
+}

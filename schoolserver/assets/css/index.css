@@ -1,0 +1,232 @@
+/*首页(登录页)样式*/
+/*李珂*/
+
+body{
+
+}
+/*content*/
+#content{
+    margin-top: 20px;
+    height: 420px;
+    /*background: yellowgreen;*/
+}
+/*注册登录*/
+#reglog{
+    height: 100%;
+    width: 420px;
+    float:left;
+    /*background: greenyellow;*/
+}
+#showPerson{
+    float: left;
+    width: 470px;
+    height: 420px;
+    display: none;
+}
+#showPerson ul{
+    margin: 20px auto;
+}
+#showPerson li,#showPerson li a{
+    width: 300px;
+    height: 50px;
+    display: block;
+    margin: 8px auto;
+    background: rgb(91,192,222);
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    border-radius: 10px;
+}
+#showPerson li span{
+    width: 300px;
+    height: 50px;
+    display: block;
+    cursor: pointer;
+}
+#login,#register{
+    width: 100%;
+    height: 420px;
+    /*margin-top: 50px;*/
+}
+#content-infor{
+    width: 470px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color:red;
+    text-indent: -50px;
+}
+#reglogbtn{
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    margin-top: 20px;
+}
+#logbtn,#regbtn{
+    float: left;
+    width: 50px;
+    height: 40px;
+    background: #fff;
+    color:rgb(193,186,98);
+    font-weight: bolder;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 2px;
+}
+#logbtn:hover,#regbtn:hover{
+    background: rgb(238,238,238);
+    border-radius: 5px;
+    /*border-top:1px solid rgb(221,221,221,);*/
+}
+.active{
+    border-top:2px solid rgb(221,221,221);
+    border-left:2px solid rgb(221,221,221);
+    border-right:2px solid rgb(221,221,221);
+    color:#000;
+    border-radius: 5px;
+}
+#sendcode{
+    display: block;
+    width: 85px;
+    height: 20px;
+    background: greenyellow;
+    margin-left: 320px;
+    border-radius: 2px;
+    border:1px solid black;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+input[type="text"],input[type="password"]{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    border:1px solid rgb(204,204,204);
+}
+#regsub,#logsub{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: #008800;
+    color:#fff;
+    cursor: pointer;
+    margin-top: 20px;
+}
+#regreset,#logreset{
+    width: 65px;
+    height: 40px;
+    border-radius: 5px;
+    background: #ff0000;
+    border: none;
+    color:#fff;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+#register{
+    display: none;
+}
+#forget{
+    margin-left:150px;
+}
+/*轮播图*/
+#scrollpic{
+    width: 680px;
+    height: 420px;
+    float: left;
+    margin-left: 30px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+}
+#mask{
+    background: black;
+    width: 680px;
+    height: 420px;
+    float: right;
+    position: absolute;
+    z-index:999;
+    opacity: 0;
+}
+#scrollpic #pic{
+    width: 2720px;
+    height: 350px;
+    position: absolute;
+}
+#pic img{
+    width: 680px;
+    height: 350px;
+    float:left;
+}
+#list {
+    position: absolute;
+    bottom:80px;
+    left:50%;
+    margin-left: -40px;
+    z-index:1000;
+}
+#list li{
+    float:left;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #fff;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 4px;
+    cursor: pointer;
+}
+#list .selected{
+    background: yellow;
+}
+/*circlrlist*/
+#circlrlist{
+    height: 250px;
+    margin-top: 50px;
+    position: relative;
+}
+#circlrlist li{
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 70px;
+    margin-right: 130px;
+    position: relative;
+}
+#circlrlist li span{
+    position: absolute;
+    top:20px;
+    display: none;
+}
+#circlrlist li img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+#circlrlist li a:hover img{
+    width: 150px;
+    height: 150px;
+    border: 50px solid rgb(247,245,251);
+}
+#circlr-content{
+    float:left;
+    height: 100%;
+    background: rgb(245,245,245);
+    border-radius: 20px;
+    margin-top:30px;
+    margin-left: 20px;
+}
+#circlr-content div{
+    width: 230px;
+    height: 200px;
+    text-align: center;
+    padding-top: 60%;
+    line-height: 30px;
+ }
+#circlr-content .hd{
+    display: none;
+}

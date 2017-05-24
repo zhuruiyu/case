@@ -1,0 +1,88 @@
+
+#content{
+    margin-top: 30px;
+}
+#con{
+    margin-left: 50px;
+    width: 650px;
+    float: left;
+}
+#con-content{
+    min-height: 560px;
+}
+#con-title{
+    font-size: 14px;
+    color: #666;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.con-item{
+    padding: 10px 0;
+    margin-left: 20px;
+    border-bottom: 1px solid rgb(238,238,238);
+}
+.item-title span {
+    margin-right: 5px;
+    color:#999;
+}
+#list{
+    width: 200px;
+    float: left;
+    margin-left: 50px;
+}
+#list >#unlogin >a{
+    display: block;
+    width: 200px;
+    text-align: center;
+    height: 120px;
+    line-height: 200px;
+    font-size: 14px;
+    color: #999;
+    font-weight: 700;
+    border-bottom: 1px solid rgb(238,238,238);
+}
+#list-login>ul>li{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    font-weight: 700;
+    line-height: 50px;
+}
+#list-login>ul>li a{
+    font-size: 14px;
+    color: #999;
+    font-weight: 700;
+}
+#list-con ul li{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    font-weight: 700;
+    line-height: 50px;
+}
+#list-con ul li a{
+    font-size: 14px;
+    color: #999;
+    font-weight: 700;
+}
+#list li:hover {
+    background: rgb(239,246,250);
+}
+#con-btn{
+    width: 600px;
+    height: 30px;
+    margin-left: 20px;
+}
+#con-btn button{
+    width: 600px;
+    height: 30px;
+    background: yellow;
+}
+.item-con span{
+    margin-right: 10px;
+    cursor: pointer;
+}

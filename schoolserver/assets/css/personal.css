@@ -1,0 +1,76 @@
+#content{
+    margin-top: 20px;
+    height: 590px;
+}
+#content-left{
+    width: 900px;
+    height: 100%;
+    float: left;
+    font-size: 18px;
+    font-weight: bolder;
+}
+#content-left>div{
+    width: 300px;
+    height: 500px;
+    margin: 20px auto;
+}
+#personal>div{
+    margin-top: 15px;
+}
+#password > div{
+    margin-top: 15px;
+}
+#content-left div input[type="text"],#password  >div input[type="password"]{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+#content-left div input[type="submit"],#password  >div input[type="submit"]{
+    width: 300px;
+    height: 40px;
+    background: green;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+}
+#name,#user,#grade,#major{
+    font-size: 15px;
+    font-weight: bold;
+}
+#password{
+    display: none;
+}
+#personal{
+    display: block;
+}
+#password:target ~#personal{
+    display: none;
+}
+#password:target{
+    display: block;
+}
+#content-right{
+    width: 300px;
+    height: 100%;
+    float:left;
+}
+#content-right ul li,#content-right ul li a{
+    width: 200px;
+    height: 50px;
+    background: rgb(255, 204, 0);
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+.content-infor{
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color:red;
+}
+
+
